@@ -5,7 +5,7 @@ import { FaBars } from 'react-icons/fa';
 export const Nav = styled.nav`
     ${'' /* background:"linear-gradient(to bottom, Transparente 0%,Transpa?rente 50%,red 50%,red 100%)" */}
     background: linear-gradient(rgba(149,152,154,0.5),transparent);
-    background-color:rgba(165,167,168,0.5);
+    background-color:rgba(165,167,168,0.3);
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -15,6 +15,7 @@ export const Nav = styled.nav`
 
 export const NavLink = styled(Link)`
     color: #fff;
+    letter-spacing: 2px;
     display: flex;
     align-items: center;
     text-decoration: none;
