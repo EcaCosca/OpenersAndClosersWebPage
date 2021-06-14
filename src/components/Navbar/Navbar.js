@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+// import companyLogo from 'src\images\companyLogo.png'
+import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavbarElements';
+
 
 const Navbar = () => {
     return (
-        <div>
+        <>
             <Nav>
                 <NavLink to="/">
+                    {/* <img src={companyLogo} alt="Openers and Closers Logo"/> */}
                     <h1>Logo</h1>
                 </NavLink>
                 <Bars />
@@ -19,19 +23,16 @@ const Navbar = () => {
                         CERRADURAS ELECTROMAGNÉTICOS
                     </NavLink>
                     <NavLink to="/cerraduras-de-seguridad" activeStyle>
-                        CERRADURAS DE SEGURIDAD
+                        CERRADURAS DE SEGU RIDAD
                     </NavLink>
                     <NavLink to="/accesorios" activeStyle>
                         ACCESORIOS
                     </NavLink>
                 </NavMenu>
-                <NavBtn>
-                    <NavBtnLink to=''
-                </NavBtn>
                 
             </Nav>
-        </div>
+        </>
     )
-}
+};
 
 export default Navbar
