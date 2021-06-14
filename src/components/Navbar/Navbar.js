@@ -23,7 +23,7 @@ const Navbar = () => {
                         CERRADURAS ELECTROMAGNÉTICOS
                     </NavLink>
                     <NavLink to="/cerraduras-de-seguridad" activeStyle>
-                        CERRADURAS DE SEGU RIDAD
+                        CERRADURAS DE SEGURIDAD
                     </NavLink>
                     <NavLink to="/accesorios" activeStyle>
                         ACCESORIOS
