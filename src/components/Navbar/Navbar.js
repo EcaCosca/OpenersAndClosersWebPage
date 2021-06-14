@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaSearch } from 'react-icons/fa';
 // import companyLogo from 'src\images\companyLogo.png'
 import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavbarElements';
 
@@ -30,7 +29,7 @@ const Navbar = () => {
                         ACCESORIOS
                     </NavLink>
                 </NavMenu>
-                <
+                
                 
             </Nav>
         </>
