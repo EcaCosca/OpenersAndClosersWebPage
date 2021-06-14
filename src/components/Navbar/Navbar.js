@@ -3,7 +3,17 @@ import React from 'react'
 const Navbar = () => {
     return (
         <div>
-            <h1>Navbar</h1>
+            <Nav>
+                <NavLink to="/">
+                    <h1>Logo</h1>
+                </NavLink>
+                <Bars />
+                <NavMenu>
+                    <NavLink to="/about" activeStyle>
+                        About
+                    </NavLink>
+                </NavMenu>
+            </Nav>
         </div>
     )
 }
