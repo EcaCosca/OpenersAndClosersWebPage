@@ -8,8 +8,7 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavLink to="/">
-                    {/* <img src={companyLogo} alt="Openers and Closers Logo"/> */}
-                    <h1>Logo</h1>
+                    <img src={require('../../images/companyLogo.png')} alt="Openers and Closers Logo"/>
                 </NavLink>
                 <Bars />
                 <NavMenu>
