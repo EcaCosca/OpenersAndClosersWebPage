@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './pages';
 import Accesorios from './pages/Accesorios';
 import electricos from './pages/electricos';
-// import CerraderosElectronicos from './pages/CerraderosElectronicos';
+import electronicos from './pages/electronicos';
 import electromagneticos from './pages/electromagneticos';
 // import CerradurasSeguridad from './pages/CerradurasSeguridad';
 
@@ -17,7 +17,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/Accesorios" component={Accesorios} />
         <Route path="/electricos" component={electricos} />
-        {/* <Route path="/CerraderosElectronicos" component={CerraderosElectronicos} /> */}
+        <Route path="/electronicos" component={electronicos} />
         <Route path="/electromagneticos" component={electromagneticos} />
         {/* <Route path="/CerradurasSeguridad" component={CerradurasSeguridad} /> */}
       </Switch>
