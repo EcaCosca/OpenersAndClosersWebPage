@@ -7,7 +7,7 @@ import Accesorios from './pages/Accesorios';
 import electricos from './pages/electricos';
 import electronicos from './pages/electronicos';
 import electromagneticos from './pages/electromagneticos';
-// import CerradurasSeguridad from './pages/CerradurasSeguridad';
+import seguridad from './pages/seguridad';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Route path="/electricos" component={electricos} />
         <Route path="/electronicos" component={electronicos} />
         <Route path="/electromagneticos" component={electromagneticos} />
-        {/* <Route path="/CerradurasSeguridad" component={CerradurasSeguridad} /> */}
+        <Route path="/seguridad" component={seguridad} />
       </Switch>
 
     </Router>

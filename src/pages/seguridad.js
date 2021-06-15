@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CerradurasSeguridad = () => {
+const seguridad = () => {
     return (
         <div style={{
             display: 'flex',
@@ -13,4 +13,4 @@ const CerradurasSeguridad = () => {
     )
 }
 
-export default CerradurasSeguridad
+export default seguridad
