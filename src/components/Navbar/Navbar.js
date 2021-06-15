@@ -1,5 +1,5 @@
 import React from 'react';
-// import companyLogo from 'src\images\companyLogo.png'
+import companyLogo from '../../images/companyLogo.png'
 import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavbarElements';
 
 
@@ -8,7 +8,7 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavLink to="/">
-                    <img src={require('../../images/companyLogo.png')} alt="Openers and Closers Logo"/>
+                    <img src={companyLogo} alt="Openers and Closers Logo"/>
                 </NavLink>
                 <Bars />
                 <NavMenu>

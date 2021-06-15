@@ -7,7 +7,7 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavLink to="/">
-                    <img src={require('../../images/companyLogo.png')} alt="Openers and Closers Logo"/>
+                    <div id="profile-image"><img src={require('../../images/companyLogo.png')} alt="Openers and Closers Logo"/></div>
                 </NavLink>
                 <Bars />
                 <NavMenu>
