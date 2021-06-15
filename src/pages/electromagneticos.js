@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CerraderosElectricos = () => {
+const electromagneticos = () => {
     return (
         <div style={{
             display: 'flex',
@@ -8,9 +8,9 @@ const CerraderosElectricos = () => {
             alignItems: 'center',
             height: '90vh'
         }}>
-            <h1>Cerraderos Eléctricos</h1>
+            <h1>Cerraduras Electromagneticos</h1>
         </div>
     )
 }
 
-export default CerraderosElectricos
+export default electromagneticos
