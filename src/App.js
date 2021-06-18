@@ -8,7 +8,6 @@ import electricos from './pages/electricos';
 import electronicos from './pages/electronicos';
 import electromagneticos from './pages/electromagneticos';
 import seguridad from './pages/seguridad';
-import { FooterContainer } from './components/containers/footer.js'
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
         <Route path="/electromagneticos" component={electromagneticos} />
         <Route path="/seguridad" component={seguridad} />
       </Switch>
-      <FooterContainer />
 
     </Router>
   );
