@@ -12,3 +12,15 @@
   --mainWhite: #fff;
   --mainBlue: #007bff;
 }
+
+.company-logo {
+  height: 90%;
+  width: 305 px;
+  object-fit:cover;
+  object-position:50% 50%;
+
+  @media screen and (max-width: 768px) {
+    height: 90%;
+  width: 100 px;
+}
+}
