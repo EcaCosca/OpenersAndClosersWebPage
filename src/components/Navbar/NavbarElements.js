@@ -6,10 +6,13 @@ export const Nav = styled.nav`
     background-color:rgba(165,167,168,0.3);
     background-image: linear-gradient(45deg, #b5b5b5, #a1a1a1);
     height: 80px;
+    ${'' /* margin-top: -80px; */}
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0.5rem calc((100 vw - 1000px) / 2);
     z-index: 10;
+    position: sticky;
 `;
 
 export const NavLink = styled(Link)`
@@ -27,7 +30,8 @@ export const NavLink = styled(Link)`
         font-weight: 900;
         background-image: linear-gradient(45deg, #f25555, #575757);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; 
+        -webkit-text-fill-color: transparent;
+        ${'' /* border-bottom: 3px solid #fff; */}
     }
 `;
 

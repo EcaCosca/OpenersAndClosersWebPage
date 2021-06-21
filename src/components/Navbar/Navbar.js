@@ -13,16 +13,24 @@ const Navbar = () => {
                 <Bars />
                 <NavMenu>
                     <NavLink to="/electronicos" activeStyle>
-                        CERRADEROS ELECTRÓNICOS
+                        CERRADEROS<br /> ELECTRÓNICOS
                     </NavLink>
                     <NavLink to="/electricos" activeStyle>
-                        CERRADEROS ELÉCTRICOS
+                        CERRADEROS
+                        <br />
+                        ELÉCTRICOS
                     </NavLink>
                     <NavLink to="/electromagneticos" activeStyle>
-                        CERRADURAS ELECTROMAGNÉTICOS
+                        CERRADURAS
+                        <br />
+                        ELECTROMAGNÉTICOS
                     </NavLink>
                     <NavLink to="/seguridad" activeStyle>
-                        CERRADURAS DE SEGURIDAD
+                        CERRADURAS
+                        <br />
+                        DE
+                        <br />
+                        SEGURIDAD
                     </NavLink>
                     <NavLink to="/accesorios" activeStyle>
                         ACCESORIOS
