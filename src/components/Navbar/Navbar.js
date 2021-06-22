@@ -1,6 +1,6 @@
 import React from 'react';
 import companyLogo from '../../images/companyLogo.png'
-import {Nav, NavLink, Bars, NavMenu} from './NavbarElements';
+import {Nav, NavLink, Bars, NavMenu, NavBtnLink, NavBtn} from './NavbarElements';
 
 
 const Navbar = () => {
@@ -36,8 +36,9 @@ const Navbar = () => {
                         ACCESORIOS
                     </NavLink>
                 </NavMenu>
-                
-                
+                <NavBtn>
+                    <NavBtnLink to="/signin">Sign Up</NavBtnLink>
+                </NavBtn>
             </Nav>
         </>
     )
