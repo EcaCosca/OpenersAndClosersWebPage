@@ -1,19 +1,30 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Video from '../videos/videolq.mp4'
+import { Button } from '../ButtonElement';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements'
 
 const HeroSection = () => {
+    const [hover, setHover] = useState(false)
+
+    const onHover = () => {
+        setHover(!hover)
+    }
     return (
         <HeroContainer>
             <HeroBg>
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
-            {/* <HeroContent>
+            <HeroContent>
                 <HeroH1>Openers and Closers</HeroH1>
                     <HeroP>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at enim augue. Aenean odio tortor, mattis suscipit enim quis, euismod tristique magna. Quisque placerat eros eget nibh molestie tristique. Vivamus gravida leo non risus tincidunt porttitor. Nulla lacinia mattis libero et pharetra. Nunc sodales lorem in tortor ornare, non efficitur neque euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce fermentum euismod diam placerat commodo. Phasellus lobortis nibh turpis, et faucibus sapien ultricies id. Donec eu malesuada metus
+                    Openers & Closers es una empresa familiar que se fundó con el objetivo de producir cerraderos eléctricos de alta calidad para un mercado internacional.
                     </HeroP>
-            </HeroContent> */}
+                    <HeroBtnWrapper>
+                        {/* <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
+                            Get started {hover ? <ArrowForward /> : <ArrowRight />}
+                        </Button> */}
+                    </HeroBtnWrapper>
+            </HeroContent>
         </HeroContainer>
     )
 }
