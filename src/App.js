@@ -13,16 +13,15 @@ import seguridad from './pages/seguridad';
 function App() {
   return (
     <Router>
-      <Sidebar />
-      <Navbar />
-      <Switch>
+      <Home />
+      {/* <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/Accesorios" component={Accesorios} />
         <Route path="/electricos" component={electricos} />
         <Route path="/electronicos" component={electronicos} />
         <Route path="/electromagneticos" component={electromagneticos} />
         <Route path="/seguridad" component={seguridad} />
-      </Switch>
+      </Switch> */}
 
     </Router>
   );

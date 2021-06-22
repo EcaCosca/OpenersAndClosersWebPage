@@ -3,14 +3,14 @@ import companyLogo from '../../images/companyLogo.png'
 import {Nav, NavLink, Bars, NavMenu, NavBtnLink, NavBtn} from './NavbarElements';
 
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
     return (
         <>
             <Nav>
                 <NavLink to="/">
                     <img className='company-logo' src={companyLogo} alt="Openers and Closers Logo"/>
                 </NavLink>
-                <Bars />
+                <Bars onClick={toggle} />
                 <NavMenu>
                     <NavLink to="/electronicos" activeStyle>
                         CERRADEROS<br /> ELECTRÓNICOS
