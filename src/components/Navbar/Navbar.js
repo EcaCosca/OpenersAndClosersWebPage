@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import companyLogo from '../../images/companyLogo.png'
-import {Nav, NavLink, Bars, NavMenu, NavBtnLink, NavBtn} from './NavbarElements';
+// import companyLogo from '../../images/companyLogo.png'
+import {Nav, NavLink, Bars, NavMenu, NavBtnLink, NavBtn, NavLogo, CompanyLogo} from './NavbarElements';
+import { IconContext } from 'react-icons/lib'
 
 const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false)
@@ -19,10 +20,11 @@ const Navbar = ({ toggle }) => {
 
     return (
         <>
+        <IconContext.Provider value={{ color: '#fff'}}> 
             <Nav scrollNav={scrollNav}>
-                <NavLink to="/">
-                    <img className='company-logo' src={companyLogo} alt="Openers and Closers Logo"/>
-                </NavLink>
+                <NavLogo to="/">
+                    <CompanyLogo src='../../images/companyLogo.png' alt="Openers and Closers Logo"/>
+                </NavLogo>
                 <Bars onClick={toggle} />
                 <NavMenu>
                     <NavLink to="/electronicos" activeStyle>
@@ -53,6 +55,7 @@ const Navbar = ({ toggle }) => {
                     <NavBtnLink to="/signin">Sign Up</NavBtnLink>
                 </NavBtn>
             </Nav>
+        </IconContext.Provider>
         </>
     )
 };

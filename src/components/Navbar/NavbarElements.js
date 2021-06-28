@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { NavLink as Link } from 'react-router-dom';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
 import { FaBars } from 'react-icons/fa';
 
 export const Nav = styled.nav`
@@ -18,7 +19,7 @@ export const Nav = styled.nav`
     width: 100%;
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled(LinkR)`
     color: #fff;
     letter-spacing: 2px;
     display: flex;
@@ -47,7 +48,7 @@ export const Bars = styled(FaBars)`
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-100%, 75%);
+        transform: translate(-100%, 60%);
         font-size:1.8rem;
         cursor: pointer;
     }
@@ -56,7 +57,9 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
     display: flex;
     align-items: center;
-    margin-right: -24px;
+    list-style: none;
+    text-align: center;
+    margin-right: -22px;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -73,7 +76,7 @@ export const NavBtn = styled.nav`
 `
 
 
-export const NavBtnLink = styled(Link)`
+export const NavBtnLink = styled(LinkR)`
     border-radius: 50px;
     background: #b8b8b8;
     padding: 10px 22px;
@@ -90,3 +93,20 @@ export const NavBtnLink = styled(Link)`
         color: #010606;
     }
 `;
+
+export const NavLogo = styled(LinkR)`
+    color: #fff;
+    justify-self: flex-start;
+    cursor: pointer;
+    font-size:1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    font-weight: bold;
+    text-decoration: none;
+`
+
+export const CompanyLogo = styled.img`
+    object-fit: contain;
+`
+

@@ -3,6 +3,7 @@ import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinkWrapper, FooterLinkTitle, FooterLinkItems, FooterLink, SocialMediaContainer, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcon, SocialIconLink } from './FooterElements';
 import companyLogo from '../../images/companyLogo.png'
 
+
 function Footer() {
   return (
     <FooterContainer>
