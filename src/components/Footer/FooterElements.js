@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const FooterContainer = styled.footer`
-    background-color: #101522;
+    background-color:rgba(165,167,168,0.3);
+    background-image: linear-gradient(45deg, #b5b5b5, #a1a1a1);
 `
 
 export const FooterWrap = styled.div`
@@ -17,29 +18,52 @@ export const FooterWrap = styled.div`
 
 export const FooterLinksContainer = styled.div`
     display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 820px) {
+        padding-top:32px;
+    }
 `
 
-export const FooterContainer = styled.footer`
-    b
+export const FooterLinkWrapper = styled.div`
+    display: flex;
+    
+    @media screen and (max-width: 820px) {
+        flex-direction: column;
+    }
 `
 
-export const FooterContainer = styled.footer`
-    b
+export const FooterLinkItems = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+    color: #fff;
+
+    @media screen and (max-width: 420px) {
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
 `
 
-export const FooterContainer = styled.footer`
-    b
+export const FooterLinkTitle = styled.h1`
+    font-size: 14px;
+    margin-bottom: 16px;
 `
 
-export const FooterContainer = styled.footer`
-    b
-`
+export const FooterLink = styled(Link)`
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
 
-export const FooterContainer = styled.footer`
-    b
-`
-
-export const FooterContainer = styled.footer`
-    b
+    &:hover {
+        color: #f25555;
+        transition: 0.3s ease-out;
+    }
 `
 
