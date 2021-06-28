@@ -1,6 +1,7 @@
 import React from "react";
 import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinkWrapper, FooterLinkTitle, FooterLinkItems, FooterLink, SocialMediaContainer, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcon, SocialIconLink } from './FooterElements';
+import companyLogo from '../../images/companyLogo.png'
 
 function Footer() {
   return (
@@ -9,7 +10,10 @@ function Footer() {
         <FooterLinksContainer>
           <SocialMediaContainer>
             <SocialMediaWrap>
-              <SocialLogo to='/'>Ja</SocialLogo>
+              <SocialLogo to='/'>
+                Ja
+                {/* <img className='company-logo' src={companyLogo} alt="Openers and Closers Logo"/> */}
+              </SocialLogo>
               <SocialIcon>
                 <SocialIconLink href='https://www.instagram.com/openersclosers/' target="_blank" aria-label="Instagram"><FaInstagram /></SocialIconLink>
                 <SocialIconLink href='https://www.linkedin.com/in/openers-closers-53940147/' target="_blank" aria-label="LinkedIn"><FaLinkedin /></SocialIconLink>

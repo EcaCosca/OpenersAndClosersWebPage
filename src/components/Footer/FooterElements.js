@@ -103,19 +103,24 @@ export const SocialLogo = styled(Link)`
 `
 
 export const WebsiteRights = styled.small`
-    color: #fff;
-    margin-bottom: 16px;
+    color: #00000;
+    margin-bottom: -10px;
 `
 
 export const SocialIcon = styled.div`
     display: flex;
-    width: 240px;
-    justify-content: space-between;
+    width: 200px;
+    justify-content: space-around;
     align-items: center;
 `
 
 export const SocialIconLink = styled.a`
-    color: #fff;
+    color: #000000;
     margin-bottom: 24px;
+    font-size: 46px;
 `
-
+// export const ServicesLogo = styled.img`
+//     height: 10px;
+//     width: 10px;
+//     margin-bottom: 10px;
+// `
