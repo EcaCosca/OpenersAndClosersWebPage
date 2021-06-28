@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
-// import companyLogo from '../../images/companyLogo.png'
 import {Nav, NavLink, Bars, NavMenu, NavBtnLink, NavBtn, NavLogo, CompanyLogo} from './NavbarElements';
 import { IconContext } from 'react-icons/lib'
+import { animateScroll as scroll } from 'react-scroll';
 
 const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false)
@@ -18,11 +18,16 @@ const Navbar = ({ toggle }) => {
         window.addEventListener('scroll', changeNav)
     }, [])
 
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
+
+
     return (
         <>
         <IconContext.Provider value={{ color: '#fff'}}> 
             <Nav scrollNav={scrollNav}>
-                <NavLogo to="/">
+                <NavLogo to="/" onClick={toggleHome}>
                     <CompanyLogo src='../../images/companyLogo.png' alt="Openers and Closers Logo"/>
                 </NavLogo>
                 <Bars onClick={toggle} />
