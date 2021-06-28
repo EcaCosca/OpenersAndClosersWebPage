@@ -1,12 +1,25 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import companyLogo from '../../images/companyLogo.png'
 import {Nav, NavLink, Bars, NavMenu, NavBtnLink, NavBtn} from './NavbarElements';
 
-
 const Navbar = ({ toggle }) => {
+    const [scrollNav, setScrollNav] = useState(false)
+
+    const changeNav = ()=> {
+        if(window.scrollY >= 80) {
+            setScrollNav(true)
+        } else {
+            setScrollNav(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    }, [])
+
     return (
         <>
-            <Nav>
+            <Nav scrollNav={scrollNav}>
                 <NavLink to="/">
                     <img className='company-logo' src={companyLogo} alt="Openers and Closers Logo"/>
                 </NavLink>
