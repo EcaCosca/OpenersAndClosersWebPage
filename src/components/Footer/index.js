@@ -1,11 +1,22 @@
 import React from "react";
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinkWrapper, FooterLinkTitle, FooterLinkItems, FooterLink} from './FooterElements';
+import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinkWrapper, FooterLinkTitle, FooterLinkItems, FooterLink, SocialMediaContainer, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcon, SocialIconLink } from './FooterElements';
 
 function Footer() {
   return (
     <FooterContainer>
       <FooterWrap>
         <FooterLinksContainer>
+          <SocialMediaContainer>
+            <SocialMediaWrap>
+              <SocialLogo to='/'>Ja</SocialLogo>
+              <SocialIcon>
+                <SocialIconLink href='https://www.instagram.com/openersclosers/' target="_blank" aria-label="Instagram"><FaInstagram /></SocialIconLink>
+                <SocialIconLink href='https://www.linkedin.com/in/openers-closers-53940147/' target="_blank" aria-label="LinkedIn"><FaLinkedin /></SocialIconLink>
+                <SocialIconLink href='https://www.youtube.com/channel/UCXruYOvDQ8bGijn6PJJy2wQ' target="_blank" aria-label="Youtube"><FaYoutube /></SocialIconLink>
+              </SocialIcon>
+            </SocialMediaWrap>
+          </SocialMediaContainer>
           <FooterLinkWrapper>
           {/* Column 1 */}
             <FooterLinkItems>
@@ -20,7 +31,7 @@ function Footer() {
               <FooterLinkTitle>PRODUCTOS</FooterLinkTitle>
                 <FooterLink to="/electronicos">Cerraderos electronicos</FooterLink>
                 <FooterLink to="/electricos">Cerraderos eléctricos</FooterLink>
-                <FooterLink to="/electromagneticas">Cerraduras electromagnéticas</FooterLink>
+                <FooterLink to="/electromagneticos">Cerraduras electromagnéticas</FooterLink>
                 <FooterLink to="/seguridad">Cerraduras de seguridad</FooterLink>
                 <FooterLink to="/accesorios">Accesorios</FooterLink>
             </FooterLinkItems>
@@ -58,6 +69,7 @@ function Footer() {
             </FooterLinkItems> */}
           </FooterLinkWrapper>
         </FooterLinksContainer>
+              <WebsiteRights>© 2001-{new Date().getFullYear()} Openers & Closers - Todos los derechos reservados  |  Política de Privacidad  |  Política de Cookies</WebsiteRights>
       </FooterWrap>
     </FooterContainer>
   );

@@ -8,7 +8,7 @@ const electromagneticos = () => {
             alignItems: 'center',
             height: '90vh'
         }}>
-            <h1>Cerraduras Electromagneticos</h1>
+            <h1>Cerraduras Electromagneticas</h1>
         </div>
     )
 }
