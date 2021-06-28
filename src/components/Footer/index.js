@@ -2,16 +2,21 @@ import React from "react";
 import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinkWrapper, FooterLinkTitle, FooterLinkItems, FooterLink, SocialMediaContainer, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcon, SocialIconLink } from './FooterElements';
 import companyLogo from '../../images/companyLogo.png'
+import { animateScroll as scroll } from 'react-scroll';
+
 
 
 function Footer() {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+}
   return (
     <FooterContainer>
       <FooterWrap>
         <FooterLinksContainer>
           <SocialMediaContainer>
             <SocialMediaWrap>
-              <SocialLogo to='/'>
+              <SocialLogo to='/' onClick={toggleHome}>
                 Ja
                 {/* <img className='company-logo' src={companyLogo} alt="Openers and Closers Logo"/> */}
               </SocialLogo>
