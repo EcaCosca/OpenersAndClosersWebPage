@@ -17,6 +17,12 @@ export const Nav = styled.nav`
     position: fixed;
     top: 0;
     width: 100%;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
 `;
 
 export const NavLink = styled(LinkR)`
@@ -29,6 +35,12 @@ export const NavLink = styled(LinkR)`
     height: 100%;
     cursor: pointer;
     font-size: 11px;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        text-shadow: 2px 2px 4px #000000;
+        
+    }
 
     &.active {
         font-weight: 900;
