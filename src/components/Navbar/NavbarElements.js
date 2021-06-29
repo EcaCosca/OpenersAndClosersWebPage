@@ -37,9 +37,11 @@ export const NavLink = styled(LinkR)`
     font-size: 11px;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
+        transition: all 0.3s ease-in-out;
         text-shadow: 2px 2px 4px #000000;
-        
+        -webkit-transform: scale(1.01);
+        position: relative; 
+        top: -2px;
     }
 
     &.active {
