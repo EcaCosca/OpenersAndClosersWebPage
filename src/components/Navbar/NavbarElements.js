@@ -19,7 +19,7 @@ export const Nav = styled.nav`
     width: 100%;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
+        transition: all 0.4s ease-in-out;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
@@ -37,7 +37,7 @@ export const NavLink = styled(LinkR)`
     font-size: 11px;
 
     &:hover {
-        transition: all 0.3s ease-in-out;
+        transition: all 0.4s ease-in-out;
         text-shadow: 2px 2px 4px #000000;
         -webkit-transform: scale(1.01);
         position: relative; 
