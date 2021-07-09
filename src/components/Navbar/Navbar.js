@@ -57,7 +57,8 @@ const Navbar = ({ toggle }) => {
                     </NavLink>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to="/signin">Sign Up</NavBtnLink>
+                    {/* <NavBtnLink to="/signin">Sign Up</NavBtnLink> */}
+                    <NavBtnLink to="/create">Create User</NavBtnLink>
                 </NavBtn>
             </Nav>
         </IconContext.Provider>

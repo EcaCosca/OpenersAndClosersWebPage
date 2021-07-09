@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Sidebar from './components/Sidebar/index';
+// import Navbar from './components/Navbar/Navbar';
+// import Sidebar from './components/Sidebar/index';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './pages';
 import SignIn from './pages/signin';
@@ -23,7 +23,7 @@ function App() {
         <Route path="/electronicos" component={electronicos} />
         <Route path="/electromagneticos" component={electromagneticos} />
         <Route path="/seguridad" component={seguridad} />
-        <Route path="/user" component={CreateUser} />
+        <Route path="/create" component={CreateUser} />
       </Switch>
 
     </Router>
