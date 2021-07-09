@@ -10,6 +10,7 @@ import electricos from './pages/electricos';
 import electronicos from './pages/electronicos';
 import electromagneticos from './pages/electromagneticos';
 import seguridad from './pages/seguridad';
+import CreateUser from './components/Createuser/CreateUser'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/electronicos" component={electronicos} />
         <Route path="/electromagneticos" component={electromagneticos} />
         <Route path="/seguridad" component={seguridad} />
+        <Route path="/user" component={CreateUser} />
       </Switch>
 
     </Router>
