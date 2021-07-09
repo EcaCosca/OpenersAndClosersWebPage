@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 export default class CreateUser extends Component {
 
     async componentDidMount() {
-        const res = await axios.get('http://localhost:4000/api/users');
+        const res = await axios.get('http://localhost:3000/api/users');
         console.log(res);
     } 
 
