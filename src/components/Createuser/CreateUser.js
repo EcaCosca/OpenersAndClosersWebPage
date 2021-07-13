@@ -12,32 +12,7 @@ function CreateUser() {
 
     ), [])
 
-    // USING AXIOS HOOK useAxios
-
-    // const [{ data, loading, error, response }, refetch] = useAxios({
-    //     url: 'http://localhost:4000/api/users',
-    //     method: 'GET',
-    //   });
-    //   const [text, setText] = useState('');
-
-
-    //   useEffect(() => {
-    //       if (data) {
-    //           setText(data.email);
-    //       }else if (error) {
-    //           setText=(error.message);
-    //       }
-    //   }, [data, error]);
-
-    //   console.log(data);
-
-    //   console.table(data);
-
-    //   const allUsersArray = data;
-
-    //   console.log(allUsersArray);
-
-    
+        
         return (
             
 
