@@ -18,8 +18,6 @@ function CreateUser() {
 
             <div>
                 <h1>here</h1>
-                {/* <h2>{allUsersArray}</h2> */}
-                
                 <ul>
                     {
                         data.map(users => (
@@ -30,8 +28,6 @@ function CreateUser() {
                     }
                 </ul>
 
-                {/* <p>{allUsersArray}</p> */}
-
                 <div className="row">
                     <div className="col-md-4">
                         form user
@@ -39,8 +35,7 @@ function CreateUser() {
                     <div className="col-md-8">
                         <ul className="list-group">
                             <li>
-                                {/* {JSON.stringify(data)} */}
-                                {/* {data.email} */}
+
                             </li>
                         </ul>
                     </div>
