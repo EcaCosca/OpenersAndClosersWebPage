@@ -1,6 +1,6 @@
 import axios from 'axios'
 import useAxios from 'axios-hooks'
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 
 function CreateUser() {
 
@@ -8,21 +8,18 @@ function CreateUser() {
         url: 'http://localhost:4000/api/users',
         method: 'GET',
       });
-    
-      if (loading) return <p>Loading...</p>
-      if (error) return <p>Error!</p>
-    
-    console.log(data);
-    console.log(loading);
-    console.log(error);
-    
-    // async componentDidMount() {
-    //     const res = await axios.get('http://localhost:4000/api/users');
-    //     this.setState({users: res.data});
-    //     console.log(this.state.users);
-    //     // this.getUsers();
-    // } 
+      const [text, setText] = useState('');
 
+
+      useEffect(() => {
+          if (data) {
+              setText(data.email);
+          }else if (error) {
+              setText=(error.message);
+          }
+      }, [data, error]);
+
+      console.table(data);
     
         return (
             
@@ -37,7 +34,7 @@ function CreateUser() {
                     <div className="col-md-8">
                         <ul className="list-group">
                             <li>
-                                {JSON.stringify(data.email)}
+                                {JSON.stringify(data)}
                             </li>
                         </ul>
                     </div>
