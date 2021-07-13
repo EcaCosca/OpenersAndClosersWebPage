@@ -4,9 +4,10 @@ import React, { Component } from 'react'
 
 function CreateUser() {
 
-    const [{ data, loading, error }, refetch] = useAxios(
-        'http://localhost:4000/api/users'
-      )
+    const [{ data, loading, error, response }, refetch] = useAxios({
+        url: 'http://localhost:4000/api/users',
+        method: 'GET',
+      });
     
       if (loading) return <p>Loading...</p>
       if (error) return <p>Error!</p>
@@ -26,23 +27,20 @@ function CreateUser() {
         return (
             
 
-            
-            <div className="row">
-                <div className="col-md-4">
-                    form user
-                </div>
-                <div className="col-md-8">
-                    <ul className="list-group">
-                        <li>
-                            {/* {JSON.stringify(data.email)} */}
-                        </li>
-                        
-                        {
-                            {/* this.state.user.map(user => <li>
-                                {user.email}
-                            </li>) */}
-                        }
-                    </ul>
+            <div>
+                <h1>here</h1>
+
+                <div className="row">
+                    <div className="col-md-4">
+                        form user
+                    </div>
+                    <div className="col-md-8">
+                        <ul className="list-group">
+                            <li>
+                                {JSON.stringify(data.email)}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         )
