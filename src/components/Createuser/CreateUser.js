@@ -19,27 +19,17 @@ function CreateUser() {
             <div>
                 <h1>here</h1>
                 <ul>
-                    {
-                        data.map(users => (
-                            <li>
-                                {users.email}
-                            </li>
-                        ))
-                    }
+                    <li>
+                        {
+                            data.map(users => (
+                                <li>
+                                    {users.email}
+                                </li>
+                            ))
+                        }
+                    </li>
                 </ul>
 
-                <div className="row">
-                    <div className="col-md-4">
-                        form user
-                    </div>
-                    <div className="col-md-8">
-                        <ul className="list-group">
-                            <li>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         )
     
