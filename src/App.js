@@ -12,6 +12,7 @@ import electromagneticos from './pages/electromagneticos';
 import seguridad from './pages/seguridad';
 import CreateUser from './components/Createuser/CreateUser'
 
+
 function App() {
   return (
     <Router>

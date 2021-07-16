@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from 'react'
+import InstagramEmbed from 'react-instagram-embed';
+
 
 const url = `https://ig.instant-tokens.com/users/c1d4873b-f1ad-4f71-937d-eb89e68a03a7/instagram/17841400666951258/token.js?userSecret=f24ejws1zukw91o0o9kd2f`;
 
 const Instafeed = () => {
     const [gramz, setGramz] = useState([]);
+    const userInstagram = require("user-instagram");
+
+    // Gets informations about a user
+    userInstagram('edouard_courty') // Same as getUserData()
+        .then(console.log)
+        .catch(console.error);
 
     // useEffect (() => {
     //     console.log('fetching the gramz');
@@ -23,6 +31,10 @@ const Instafeed = () => {
 
     return (
         <>
+        <div class="powr-social-feed" id="5f681ddf_1626432326">
+
+        </div>
+        <script src="https://www.powr.io/powr.js?platform=html"></script>
 
       
 
