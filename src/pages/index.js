@@ -7,6 +7,7 @@ import Services from '../components/Services/Services'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
 import Instafeed from '../components/Instafeed/Instafeed'
+import PDF from '../components/PDF'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -21,6 +22,7 @@ const Home = () => {
             <Navbar toggle={toggle} />
             <HeroSection />
             <Instafeed />
+            <PDF />
             <InfoSection {...homeObjOne}/>
             <InfoSection {...homeObjTwo}/>
             <InfoSection {...homeObjThree}/>
