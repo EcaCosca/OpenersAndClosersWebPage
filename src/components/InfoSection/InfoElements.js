@@ -41,7 +41,7 @@ export const Column1 = styled.div`
 export const Column2 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
-    grid-area: col1;
+    grid-area: col2;
 `
 
 export const TextWrapper = styled.div`
@@ -51,7 +51,7 @@ export const TextWrapper = styled.div`
 `
 
 export const TopLine = styled.p`
-    color: #01bf71;
+    color: #f25555;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -90,8 +90,8 @@ export const ImgWrap = styled.div`
     height: 100%;
 `
 
-export const Img = styled.img`
+export const Image = styled.img`
+    padding-right: 0;
     width: 100%;
     margin: 0 0 10px 0;
-    padding-right: 0;
 `
