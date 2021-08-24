@@ -121,6 +121,8 @@ export const NavLogo = styled(LinkR)`
 `
 
 export const CompanyLogo = styled.img`
-    object-fit: contain;
+    height: 60px;
+    width: inherit;
+    margin: 10px;
 `
 

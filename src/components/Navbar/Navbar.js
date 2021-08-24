@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import {Nav, NavLink, Bars, NavMenu, NavBtnLink, NavBtn, NavLogo, CompanyLogo} from './NavbarElements';
+import { Nav, NavLink, Bars, NavMenu, NavBtnLink, NavBtn, NavLogo, CompanyLogo } from './NavbarElements';
 import { IconContext } from 'react-icons/lib'
 import { animateScroll as scroll } from 'react-scroll';
+import OPCLLogo from '../../images/companyLogo.png'
+
 
 const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false)
@@ -28,7 +30,7 @@ const Navbar = ({ toggle }) => {
         <IconContext.Provider value={{ color: '#fff'}}> 
             <Nav scrollNav={scrollNav}>
                 <NavLogo to="/" onClick={toggleHome}>
-                    <CompanyLogo src='../../images/companyLogo.png' alt="Openers and Closers Logo"/>
+                    <CompanyLogo src={OPCLLogo}/>
                 </NavLogo>
                 <Bars onClick={toggle} />
                 <NavMenu>
