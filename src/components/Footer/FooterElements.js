@@ -118,6 +118,11 @@ export const SocialIconLink = styled.a`
     color: #000000;
     margin-bottom: 24px;
     font-size: 46px;
+
+    &:hover {
+        color: #f25555;
+        transition: 0.3s ease-in-out;
+    }
 `
 // export const ServicesLogo = styled.img`
 //     height: 10px;
