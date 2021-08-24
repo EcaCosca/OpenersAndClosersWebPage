@@ -88,6 +88,7 @@ export const ServicesCardH2 = styled.h2`
     font-size: 2rem;
     margin-bottom: 10px;
     letter-spacing: 0.06em;
+    color: #f25555;
 `
 
 export const ServicesH2 = styled.h2`
@@ -96,6 +97,7 @@ export const ServicesH2 = styled.h2`
     margin-bottom: 10px;
     letter-spacing: 0.1em;
     margin-bottom: 30px;
+    color: #f25555;
 `
 
 export const ServicesP = styled.p`

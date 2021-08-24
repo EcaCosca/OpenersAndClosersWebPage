@@ -59,7 +59,7 @@ const Navbar = ({ toggle }) => {
                     </NavLink>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to="/signin">Sign Up</NavBtnLink>
+                    <NavBtnLink to="/signin">Catalogo {new Date().getFullYear()}</NavBtnLink>
                     {/* <NavBtnLink to="/create">Create User</NavBtnLink> */}
                     {/* <NavBtnLink to="//openers-closers.es/source/CAT_ENERO%202020_WEB_ESP.pdf">Catalogo</NavBtnLink> */}
                 </NavBtn>
