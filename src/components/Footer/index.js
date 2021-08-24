@@ -1,7 +1,7 @@
 import React from "react";
 import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinkWrapper, FooterLinkTitle, FooterLinkItems, FooterLink, SocialMediaContainer, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcon, SocialIconLink } from './FooterElements';
-import companyLogo from '../../images/companyLogo.png'
+import { CompanyLogo, FooterContainer, FooterWrap, FooterLinksContainer, FooterLinkWrapper, FooterLinkTitle, FooterLinkItems, FooterLink, SocialMediaContainer, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcon, SocialIconLink } from './FooterElements';
+import OPCLLogo from '../../images/companyLogo.png'
 import { animateScroll as scroll } from 'react-scroll';
 
 
@@ -17,8 +17,7 @@ function Footer() {
           <SocialMediaContainer>
             <SocialMediaWrap>
               <SocialLogo to='/' onClick={toggleHome}>
-                Ja
-                {/* <img className='company-logo' src={companyLogo} alt="Openers and Closers Logo"/> */}
+                <CompanyLogo src={OPCLLogo}/>
               </SocialLogo>
               <SocialIcon>
                 <SocialIconLink href='https://www.instagram.com/openersclosers/' target="_blank" aria-label="Instagram"><FaInstagram /></SocialIconLink>

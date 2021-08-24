@@ -129,3 +129,9 @@ export const SocialIconLink = styled.a`
 //     width: 10px;
 //     margin-bottom: 10px;
 // `
+
+export const CompanyLogo = styled.img`
+    height: 60px;
+    width: inherit;
+    margin: 10px;
+`
