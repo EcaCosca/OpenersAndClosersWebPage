@@ -62,7 +62,20 @@ export const ServicesIcon = styled.img`
 `
 
 export const ServicesH1 = styled.h1`
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 64px;
+    letter-spacing: 0.1em;
+
+    @media screen and (max-width: 480px) {
+        font-size: 2rem;
+    }
+`
+
+export const ServicesH3 = styled.h2`
+    font-size: 1rem;
+    margin-bottom: 30px;
+    letter-spacing: 0.1em;
     color: #fff;
     margin-bottom: 64px;
 
@@ -71,9 +84,18 @@ export const ServicesH1 = styled.h1`
     }
 `
 
-export const ServicesH2 = styled.h2`
-    font-size: 1rem;
+export const ServicesCardH2 = styled.h2`
+    font-size: 2rem;
     margin-bottom: 10px;
+    letter-spacing: 0.06em;
+`
+
+export const ServicesH2 = styled.h2`
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+    letter-spacing: 0.1em;
+    margin-bottom: 30px;
 `
 
 export const ServicesP = styled.p`
