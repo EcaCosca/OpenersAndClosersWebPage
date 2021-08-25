@@ -2,20 +2,20 @@ import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
 export const PDFContainer = styled.div`
-    height: 1000px;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(98, 98, 98), rgba(249,249,249,1));
+    background: linear-gradient (90deg, rgba(55,155,125,0), rgba(255,255,255,1));
     display: flex;
     flex-direction:column;
+    height: 1000px;
     justify-content: center;
-    align-items: center;
-    background: linear-gradient (90deg, rgba(55,155,125,0), rgba(255,255,255,1));
-    background-image: linear-gradient(to bottom, rgb(98, 98, 98), rgba(249,249,249,1));
 `
 
 export const PDFH1 = styled.h1`
-    font-size: 2rem;
     color: #fff;
-    margin-bottom: 64px;
+    font-size: 2rem;
     letter-spacing: 0.06em;
+    margin-bottom: 64px;
 `
 
 export const DocumentContainer =styled.div` 
@@ -29,25 +29,25 @@ export const DocumentContainer =styled.div`
 `
 
 export const PDFp = styled.p`
-    margin: 10px;
-    color: inherit;
     background: none;
     border: none;
+    color: inherit;
+    margin: 10px;
 `
 
 export const PDFNavigation = styled.div`
+    align-items: center;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     margin: 30px;
-    border-radius: 50px;
-    color: #fff;
-    border: none;
     outline: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
         transition: all 0.4s ease-in-out;
@@ -56,14 +56,14 @@ export const PDFNavigation = styled.div`
 `
 
 export const NavButton = styled.button`
-    padding: 0;
-    border: none;
-    outline: none;
-    font: inherit;
-    color: inherit;
     background: none;
+    border: none;
+    color: inherit;
     font-size: 1rem;
+    font: inherit;
     margin: 10px;
+    outline: none;
+    padding: 0;
 
     &:hover {
         transition: all 0.2s ease-in-out;
@@ -82,16 +82,16 @@ export const PDFDownload = styled.nav`
 
 
 export const PDFDownloadLink = styled(Link)`
-    border-radius: 50px;
     background: #f25555;
-    padding: 10px 22px;
-    color: #fff;
+    border-radius: 50px;
     border: none;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
     box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.06);
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 22px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
         transition: all 0.2s ease-in-out;
