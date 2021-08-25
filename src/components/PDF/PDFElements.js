@@ -30,10 +30,24 @@ export const DocumentContainer =styled.div`
 
 export const PDFp = styled.p`
     margin: 10px;
-    padding: 7px;
-    background-color: #f2f2f2;
-    -webkit-box-shadow: 5px 25px 40px 18px rgba(0,0,0,0.26); 
-    box-shadow: 5px 25px 40px 10px rgba(0,0,0,0.26);
+    color: inherit;
+    background: none;
+    border: none;
+`
+
+export const PDFNavigation = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
 
     &:hover {
         transition: all 0.4s ease-in-out;
@@ -41,8 +55,14 @@ export const PDFp = styled.p`
     }
 `
 
-export const PDFNavigation = styled.div`
-    display: flex;
-    flex-direction: row;
+export const NavButton = styled.button`
+    padding: 0;
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background: none;
+    font-size: 1rem;
+    margin: 10px;
 `
 

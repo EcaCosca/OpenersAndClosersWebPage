@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import { DocumentContainer, PDFContainer, PDFH1, PDFNavigation, PDFp } from './PDFElements'
+import { DocumentContainer, PDFContainer, PDFH1, PDFNavigation, PDFp, NavButton } from './PDFElements'
 import sample from '../../Files/CAT.pdf'
 import { FaArrowCircleRight } from 'react-icons/fa';
 import { FaArrowCircleLeft } from 'react-icons/fa';
@@ -41,21 +41,21 @@ function PDF() {
       </DocumentContainer>
       
       <PDFNavigation>
-      <button
+      <NavButton
           type="button"
           disabled={pageNumber <= 1}
           onClick={previousPage}
         >
           <FaArrowCircleLeft />
-        </button>
-      <PDFp>Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}</PDFp>
-        <button
+        </NavButton>
+      <PDFp>{pageNumber || (numPages ? 1 : '--')} / {numPages || '--'}</PDFp>
+        <NavButton
           type="button"
           disabled={pageNumber >= numPages}
           onClick={nextPage}
         >
           <FaArrowCircleRight />
-        </button>
+        </NavButton>
       </PDFNavigation>
 
     </PDFContainer>
