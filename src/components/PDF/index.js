@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import { DocumentContainer, PDFContainer, PDFH1, PDFp } from './PDFElements'
 import sample from '../../Files/CAT.pdf'
+import { FaArrowCircleRight } from 'react-icons/fa';
+import { FaArrowCircleLeft } from 'react-icons/fa';
 
 function PDF() {
   const [numPages, setNumPages] = useState(null);
@@ -37,20 +39,21 @@ function PDF() {
           <Page pageNumber={pageNumber} />
         </Document>
       </DocumentContainer>
-      <PDFp>Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}</PDFp>
+      
       <button
           type="button"
           disabled={pageNumber <= 1}
           onClick={previousPage}
         >
-          Previous
+          <FaArrowCircleLeft />
         </button>
+      <PDFp>Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}</PDFp>
         <button
           type="button"
           disabled={pageNumber >= numPages}
           onClick={nextPage}
         >
-          Next
+          <FaArrowCircleRight />
         </button>
 
     </PDFContainer>
