@@ -40,3 +40,9 @@ export const PDFp = styled.p`
         box-shadow: 10px 30px 60px 25px rgba(0, 0, 0, 0.2), 10px 16px 30px 10px rgba(0, 0, 0, 0.19);
     }
 `
+
+export const PDFNavigation = styled.div`
+    display: flex;
+    flex-direction: row;
+`
+

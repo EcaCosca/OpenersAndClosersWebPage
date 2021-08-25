@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import { DocumentContainer, PDFContainer, PDFH1, PDFp } from './PDFElements'
+import { DocumentContainer, PDFContainer, PDFH1, PDFNavigation, PDFp } from './PDFElements'
 import sample from '../../Files/CAT.pdf'
 import { FaArrowCircleRight } from 'react-icons/fa';
 import { FaArrowCircleLeft } from 'react-icons/fa';
@@ -40,6 +40,7 @@ function PDF() {
         </Document>
       </DocumentContainer>
       
+      <PDFNavigation>
       <button
           type="button"
           disabled={pageNumber <= 1}
@@ -55,6 +56,7 @@ function PDF() {
         >
           <FaArrowCircleRight />
         </button>
+      </PDFNavigation>
 
     </PDFContainer>
   );
