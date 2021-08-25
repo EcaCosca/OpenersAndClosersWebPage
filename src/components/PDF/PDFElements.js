@@ -13,7 +13,6 @@ export const PDFContainer = styled.div`
 
 export const PDFH1 = styled.h1`
     font-size: 2rem;
-    letter-spacing: 0.1em;
     color: #fff;
     margin-bottom: 64px;
     letter-spacing: 0.06em;
