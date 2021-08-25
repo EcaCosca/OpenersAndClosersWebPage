@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Document, Page } from 'react-pdf';
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import sample from '../../Files/CAT.pdf'
 
 function PDF() {
@@ -13,7 +13,8 @@ function PDF() {
   return (
     <div>
       <Document
-        file= 'https://drive.google.com/file/d/1GB8VPBawFyKM7X6LbY_vwgjLMYTX4J5S/view?usp=sharing'
+        // file= 'https://drive.google.com/file/d/1GB8VPBawFyKM7X6LbY_vwgjLMYTX4J5S/view?usp=sharing'
+        file= {sample}
         onLoadSuccess={onDocumentLoadSuccess}
       >
         <Page pageNumber={pageNumber} />
