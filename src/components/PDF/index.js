@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import { DocumentContainer, PDFContainer, PDFH1 } from './PDFElements'
+import { DocumentContainer, PDFContainer, PDFH1, PDFp } from './PDFElements'
 import sample from '../../Files/CAT.pdf'
 
 function PDF() {
@@ -9,6 +9,19 @@ function PDF() {
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
+    setPageNumber(1)
+  }
+
+  function changePage(offset) {
+    setPageNumber(prevPageNumber => prevPageNumber + offset);
+  }
+
+  function previousPage() {
+    changePage(-1);
+  }
+
+  function nextPage() {
+    changePage(1);
   }
 
   return (
@@ -24,7 +37,21 @@ function PDF() {
           <Page pageNumber={pageNumber} />
         </Document>
       </DocumentContainer>
-      <p>Page {pageNumber} of {numPages}</p>
+      <PDFp>Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}</PDFp>
+      <button
+          type="button"
+          disabled={pageNumber <= 1}
+          onClick={previousPage}
+        >
+          Previous
+        </button>
+        <button
+          type="button"
+          disabled={pageNumber >= numPages}
+          onClick={nextPage}
+        >
+          Next
+        </button>
 
     </PDFContainer>
   );
