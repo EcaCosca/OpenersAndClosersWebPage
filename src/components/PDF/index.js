@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+import { DocumentContainer, PDFContainer, PDFH1 } from './PDFElements'
 import sample from '../../Files/CAT.pdf'
 
 function PDF() {
@@ -11,16 +12,21 @@ function PDF() {
   }
 
   return (
-    <div>
-      <Document
-        // file= 'https://drive.google.com/file/d/1GB8VPBawFyKM7X6LbY_vwgjLMYTX4J5S/view?usp=sharing'
-        file= {sample}
-        onLoadSuccess={onDocumentLoadSuccess}
-      >
-        <Page pageNumber={pageNumber} />
-      </Document>
+    <PDFContainer>
+      <PDFH1>Catalogo {new Date().getFullYear()}</PDFH1>
+      
+      <DocumentContainer>
+        <Document
+          // file= 'https://drive.google.com/file/d/1GB8VPBawFyKM7X6LbY_vwgjLMYTX4J5S/view?usp=sharing'
+          file= {sample}
+          onLoadSuccess={onDocumentLoadSuccess}
+        >
+          <Page pageNumber={pageNumber} />
+        </Document>
+      </DocumentContainer>
       <p>Page {pageNumber} of {numPages}</p>
-    </div>
+
+    </PDFContainer>
   );
 }
 
