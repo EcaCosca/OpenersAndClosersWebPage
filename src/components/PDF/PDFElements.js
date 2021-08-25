@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 export const PDFContainer = styled.div`
-    height: 800px;
+    height: 1000px;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -64,5 +65,37 @@ export const NavButton = styled.button`
     background: none;
     font-size: 1rem;
     margin: 10px;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        color: #f79c9c;
+    }
 `
 
+export const PDFDownload = styled.nav`
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`
+
+
+export const PDFDownloadLink = styled(Link)`
+    border-radius: 50px;
+    background: #f25555;
+    padding: 10px 22px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.06);
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #f79c9c;
+    }
+`;

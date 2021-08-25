@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import { DocumentContainer, PDFContainer, PDFH1, PDFNavigation, PDFp, NavButton } from './PDFElements'
+import { DocumentContainer, PDFContainer, PDFH1, PDFNavigation, PDFp, NavButton, PDFDownloadLink, PDFDownload } from './PDFElements'
 import sample from '../../Files/CAT.pdf'
 import { FaArrowCircleRight } from 'react-icons/fa';
 import { FaArrowCircleLeft } from 'react-icons/fa';
@@ -57,6 +57,12 @@ function PDF() {
           <FaArrowCircleRight />
         </NavButton>
       </PDFNavigation>
+
+      <PDFDownload>
+          <PDFDownloadLink to="/signin"> Descarga el Catalogo {new Date().getFullYear()}</PDFDownloadLink>
+          {/* <NavBtnLink to="/create">Create User</NavBtnLink> */}
+          {/* <NavBtnLink to="//openers-closers.es/source/CAT_ENERO%202020_WEB_ESP.pdf">Catalogo</NavBtnLink> */}
+      </PDFDownload>
 
     </PDFContainer>
   );
