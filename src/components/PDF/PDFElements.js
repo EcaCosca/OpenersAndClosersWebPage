@@ -7,7 +7,7 @@ export const PDFContainer = styled.div`
     background: linear-gradient (90deg, rgba(55,155,125,0), rgba(255,255,255,1));
     display: flex;
     flex-direction:column;
-    height: 1000px;
+    ${'' /* height: 1000px; */}
     justify-content: center;
 `
 
@@ -16,6 +16,7 @@ export const PDFH1 = styled.h1`
     font-size: 2rem;
     letter-spacing: 0.06em;
     margin-bottom: 64px;
+    margin-top: 120px;
 `
 
 export const DocumentContainer =styled.div` 
