@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '../ButtonElements';
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, ImgWrap, Image, BtnWrap } from './InfoElements'
+import Fade from 'react-reveal/Fade';
 
 const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) => {
     return (
@@ -8,6 +9,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
             <InfoContainer lightBg={lightBg} id={id}>
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
+                    <Fade bottom cascade>
                         <Column1>
                             <TextWrapper>
                                 <TopLine>{topLine}</TopLine>
@@ -27,11 +29,14 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
                                 </BtnWrap>
                             </TextWrapper>
                         </Column1>
+                    </Fade>
+                    <Fade bottom cascade>
                         <Column2>
                             <ImgWrap>
                                 <Image src={img} alt={alt}/>
                             </ImgWrap>
                         </Column2>
+                    </Fade>
                     </InfoRow>
                 </InfoWrapper>
             </InfoContainer>

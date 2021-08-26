@@ -12,6 +12,8 @@ import {
     // ArrowForward,
     // ArrowRight 
 } from './HeroElements'
+import Fade from 'react-reveal/Fade';
+
 
 const HeroSection = () => {
     const [hover, setHover] = useState(false)
@@ -25,10 +27,16 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1>Openers and Closers</HeroH1>
-                    <HeroP>
+                <HeroH1>
+                    <Fade top cascade>
+                        Openers and Closers
+                    </Fade>
+                </HeroH1>
+                <HeroP>
+                    <Fade top cascade>
                     Openers & Closers es una empresa familiar que se fundó con el objetivo de producir cerraderos eléctricos de alta calidad para un mercado internacional.
-                    </HeroP>
+                    </Fade>
+                </HeroP>
                     <HeroBtnWrapper>
                         {/* <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
                             Get started {hover ? <ArrowForward /> : <ArrowRight />}
