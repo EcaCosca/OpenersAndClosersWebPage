@@ -28,7 +28,9 @@ function PDF() {
 
   return (
     <PDFContainer>
-      <PDFH1>Catalogo {new Date().getFullYear()}</PDFH1>
+      <PDFH1>
+        Catalogo {new Date().getFullYear()}
+      </PDFH1>
       
       <DocumentContainer>
         <Document
