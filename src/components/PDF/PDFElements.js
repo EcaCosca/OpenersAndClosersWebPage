@@ -7,7 +7,6 @@ export const PDFContainer = styled.div`
     background: linear-gradient (90deg, rgba(55,155,125,0), rgba(255,255,255,1));
     display: flex;
     flex-direction:column;
-    ${'' /* height: 1000px; */}
     justify-content: center;
 `
 
