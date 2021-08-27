@@ -22,7 +22,6 @@ export const Nav = styled.nav`
         transition: all 0.4s ease-in-out;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-
 `;
 
 export const NavLink = styled(LinkR)`
@@ -49,7 +48,6 @@ export const NavLink = styled(LinkR)`
         background-image: linear-gradient(45deg, #f25555, #575757);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        ${'' /* border-bottom: 3px solid #fff; */}
     }
 `;
 
@@ -58,22 +56,22 @@ export const Bars = styled(FaBars)`
     color: #fff;
 
     @media screen and (max-width: 768px) {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
-        font-size:1.8rem;
         cursor: pointer;
+        display: block;
+        font-size:1.8rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(-100%, 60%);
     }
 `;
 
 export const NavMenu = styled.div`
-    display: flex;
     align-items: center;
+    display: flex;
     list-style: none;
-    text-align: center;
     margin-right: -22px;
+    text-align: center;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -91,39 +89,38 @@ export const NavBtn = styled.nav`
 
 
 export const NavBtnLink = styled(LinkR)`
-    border-radius: 50px;
     background: #b8b8b8;
-    padding: 10px 22px;
-    color: #fff;
+    border-radius: 50px;
     border: none;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
     box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.06);
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 22px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
         background: #fff;
         color: #010606;
+        transition: all 0.2s ease-in-out;
     }
 `;
 
 export const NavLogo = styled(LinkR)`
-    color: #fff;
-    justify-self: flex-start;
-    cursor: pointer;
-    font-size:1.5rem;
-    display: flex;
     align-items: center;
-    margin-left: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size:1.5rem;
     font-weight: bold;
+    justify-self: flex-start;
+    margin-left: 24px;
     text-decoration: none;
 `
 
 export const CompanyLogo = styled.img`
     height: 60px;
-    width: inherit;
     margin: 10px;
+    width: inherit;
 `
-
