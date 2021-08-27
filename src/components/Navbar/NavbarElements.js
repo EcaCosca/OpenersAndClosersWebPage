@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
-// import { Link as LinkS } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 
 export const Nav = styled.nav`
@@ -24,7 +23,7 @@ export const Nav = styled.nav`
     }
 `;
 
-export const NavLink = styled(LinkR)`
+export const NavLink = styled(Link)`
     color: #fff;
     letter-spacing: 2px;
     display: flex;
@@ -87,8 +86,7 @@ export const NavBtn = styled.nav`
     }
 `
 
-
-export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled(Link)`
     background: #b8b8b8;
     border-radius: 50px;
     border: none;
@@ -107,7 +105,7 @@ export const NavBtnLink = styled(LinkR)`
     }
 `;
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(Link)`
     align-items: center;
     color: #fff;
     cursor: pointer;
