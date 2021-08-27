@@ -9,7 +9,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
             <InfoContainer lightBg={lightBg} id={id}>
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
-                    <Fade bottom cascade>
+                    <Fade left cascade>
                         <Column1>
                             <TextWrapper>
                                 <TopLine>{topLine}</TopLine>
@@ -30,7 +30,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
                             </TextWrapper>
                         </Column1>
                     </Fade>
-                    <Fade bottom cascade>
+                    <Fade right cascade>
                         <Column2>
                             <ImgWrap>
                                 <Image src={img} alt={alt}/>
