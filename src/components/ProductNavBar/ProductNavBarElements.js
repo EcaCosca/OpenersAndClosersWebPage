@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'reac-router-dom';
+import { Link } from 'react-router-dom';
 
 export const Nav = styled.nav`
     background-color:rgba(165,167,168,0.3);
@@ -47,4 +47,16 @@ export const NavLink = styled(Link)`
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-`;
+`
+
+export const NavMenu = styled.div`
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin-right: -22px;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`

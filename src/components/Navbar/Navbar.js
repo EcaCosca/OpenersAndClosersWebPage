@@ -4,8 +4,6 @@ import { IconContext } from 'react-icons/lib'
 import { animateScroll as scroll } from 'react-scroll';
 import OPCLLogo from '../../images/companyLogo.png'
 
-
-
 const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false)
 

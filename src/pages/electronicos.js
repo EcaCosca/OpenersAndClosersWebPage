@@ -1,4 +1,7 @@
 import React from 'react'
+import Navbar from '../components/Navbar/Navbar'
+import ProductNavbar from '../components/ProductNavBar/ProductNavBar'
+
 
 const electronicos = () => {
     return (
@@ -8,7 +11,10 @@ const electronicos = () => {
             alignItems: 'center',
             height: '90vh'
         }}>
+            <Navbar />
+            <ProductNavbar />
             <h1>Cerraderos Electrónicos</h1>
+
         </div>
     )
 }
