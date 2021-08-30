@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom';
 export const Nav = styled.nav`
     background-color:rgba(165,167,168,0.3);
     background-image: linear-gradient(45deg, #b5b5b5, #a1a1a1);
-    height: 80px;
-    ${'' /* margin-top: -80px; */}
+    height: 60px;
+    margin-top: 80px;
     background: ${({ scrollNav}) => (scrollNav ? '#b5b5b5' : 'transparent')};
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0.5rem calc((100 vw - 1000px) / 2);
-    z-index: 10;
+    ${'' /* padding: 0.5rem calc((100 vw - 1000px) / 2); */}
+    ${'' /* z-index: 10; */}
     position: fixed;
-    top: 0;
-    width: 100%;
+    ${'' /* top: 0; */}
+    width: 80%;
 
     &:hover {
         transition: all 0.4s ease-in-out;
@@ -23,7 +23,7 @@ export const Nav = styled.nav`
 `
 
 export const NavLink = styled(Link)`
-    align-items: center;
+    ${'' /* align-items: center;
     color: #fff;
     cursor: pointer;
     display: flex;
@@ -46,7 +46,7 @@ export const NavLink = styled(Link)`
         background-image: linear-gradient(45deg, #f25555, #575757);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
+    } */}
 `
 
 export const NavMenu = styled.div`
