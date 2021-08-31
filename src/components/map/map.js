@@ -1,11 +1,11 @@
 import React from 'react'
 
-const map = () => {
+const Map = () => {
     return (
         <div>
-            
+            <h1>YO!</h1>
         </div>
     )
 }
 
-export default map
+export default Map
