@@ -8,8 +8,9 @@ export const ProductHeaderContainer = styled.div`
     ${'' /* padding: 0 30px; */}
     height: 800px;
     width: 100%;
-    position: relative;
+    ${'' /* position: relative; */}
     z-index: 1;
+
 ${'' /* 
     :before {
         content: '';

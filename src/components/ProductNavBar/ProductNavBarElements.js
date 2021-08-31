@@ -6,7 +6,7 @@ export const Nav = styled.nav`
     background-image: linear-gradient(45deg, #b5b5b5, #a1a1a1);
     height: 60px;
     margin-top: 80px;
-    background: ${({ scrollNav}) => (scrollNav ? '#b5b5b5' : 'transparent')};
+    background: ${({ scrollNav}) => (scrollNav ? '#111111' : 'transparent')};
     display: flex;
     justify-content: space-around;
     align-items: center;
