@@ -3,10 +3,7 @@ import { Phrase, Char } from "animatedtxt";
 import { ProductHeaderContainer, ProductH1 } from './ProductHeaderElements';
 
 const ProductHeader = (name) => {
-    let title = '';
-    console.log(name)
-    // title = props;
-    console.log(title)
+    let title = 'banner';
     const banner = title.toUpperCase().split('');
 
     return (
