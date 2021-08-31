@@ -11,6 +11,7 @@ import electronicos from './pages/electronicos';
 import electromagneticos from './pages/electromagneticos';
 import seguridad from './pages/seguridad';
 import CreateUser from './components/Createuser/CreateUser'
+import contacto from './pages/contacto';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/electromagneticos" component={electromagneticos} />
         <Route path="/seguridad" component={seguridad} />
         <Route path="/create" component={CreateUser} />
+        <Route path="/contacto" component={contacto} />
       </Switch>
 
     </Router>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer'
 import Navbar from '../components/Navbar/Navbar'
 import ProductHeader from '../components/Product/Header/ProductHeader'
 import ProductNavbar from '../components/ProductNavBar/ProductNavBar'
@@ -6,16 +7,14 @@ import ProductNavbar from '../components/ProductNavBar/ProductNavBar'
 
 const electronicos = () => {
     return (
-        <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-        }}>
+        <>
             <Navbar />
             <ProductNavbar />
-            <ProductHeader />
+            <ProductHeader name='Electronicos'/>
+            <Footer />
             
 
-        </div>
+        </>
     )
 }
 

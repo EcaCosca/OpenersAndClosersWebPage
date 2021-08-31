@@ -61,7 +61,7 @@ function Footer() {
                 <FooterLink to="/">Soluciones</FooterLink>
                 <FooterLink to="/">Configurador</FooterLink>
                 <FooterLink to="/">Tienda</FooterLink>
-                <FooterLink to="/">Contacto</FooterLink>
+                <FooterLink to="/contacto">Contacto</FooterLink>
             </FooterLinkItems>
           </FooterLinkWrapper>
           <FooterLinkWrapper>
