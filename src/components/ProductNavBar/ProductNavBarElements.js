@@ -10,10 +10,7 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    ${'' /* padding: 0.5rem calc((100 vw - 1000px) / 2); */}
-    ${'' /* z-index: 10; */}
     position: fixed;
-    ${'' /* top: 0; */}
     width: 80%;
 
     &:hover {
