@@ -1,15 +1,17 @@
 import React from 'react'
+import Footer from '../components/Footer'
+import Navbar from '../components/Navbar/Navbar'
+import ProductHeader from '../components/Product/Header/ProductHeader'
+import ProductNavbar from '../components/ProductNavBar/ProductNavBar'
 
 const Accesorios = () => {
     return (
-        <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '90vh'
-        }}>
-            <h1>Accesorios</h1>
-        </div>
+        <>
+            <Navbar />
+            <ProductNavbar />
+            <ProductHeader name='Electronicos'/>
+            <Footer />
+        </>
     )
 }
 

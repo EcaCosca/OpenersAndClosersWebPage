@@ -12,8 +12,6 @@ const electronicos = () => {
             <ProductNavbar />
             <ProductHeader name='Electronicos'/>
             <Footer />
-            
-
         </>
     )
 }
