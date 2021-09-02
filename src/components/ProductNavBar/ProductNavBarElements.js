@@ -6,12 +6,13 @@ export const Nav = styled.nav`
     background-image: linear-gradient(45deg, #b5b5b5, #a1a1a1);
     height: 60px;
     margin-top: 80px;
-    background: ${({ scrollNav}) => (scrollNav ? '#111111' : 'transparent')};
+    background: ${({ scrollNav}) => (scrollNav ? '#888888' : 'transparent')};
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
     width: 80%;
+    border-bottom-right-radius: 30px;
 
     &:hover {
         transition: all 0.4s ease-in-out;
@@ -20,7 +21,7 @@ export const Nav = styled.nav`
 `
 
 export const NavLink = styled(Link)`
-    ${'' /* align-items: center;
+    align-items: center;
     color: #fff;
     cursor: pointer;
     display: flex;
@@ -43,7 +44,7 @@ export const NavLink = styled(Link)`
         background-image: linear-gradient(45deg, #f25555, #575757);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    } */}
+    }
 `
 
 export const NavMenu = styled.div`
