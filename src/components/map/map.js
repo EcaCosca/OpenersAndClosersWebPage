@@ -22,7 +22,13 @@ const MapApp = () => {
                 maxZomm={20}
                 mapboxApiAccessToken={REACT_APP_MAPBOX_TOKEN}
             >
-                {/* marker */}
+                <Marker
+                    latitude={41.392100}
+                    longitude={2.033520}
+                 >
+                    <h1>OPCL</h1>
+
+                </Marker>
             </ReactMapGL>
         </MapContainer>
     )
