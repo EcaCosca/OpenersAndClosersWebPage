@@ -9,9 +9,9 @@ const MapApp = () => {
     const [viewport, setViewport] = useState ({
         latitude: 41.392100,
         longitude: 2.033520,
-        width: 400,
+        width: 600,
         height: 600,
-        zoom: 12
+        zoom: 14,
     });
 
     const mapRed = useRef();
@@ -21,6 +21,7 @@ const MapApp = () => {
             <ReactMapGL 
                 {...viewport}
                 maxZomm={20}
+                onViewportChange={setViewport}
                 mapboxApiAccessToken={REACT_APP_MAPBOX_TOKEN}
             >
                 <Marker
@@ -28,7 +29,6 @@ const MapApp = () => {
                     longitude={2.033520}
                  >
                     <LogoMarker src={Logo} alt="OPCL" />
-
                 </Marker>
             </ReactMapGL>
         </MapContainer>

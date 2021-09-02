@@ -6,6 +6,7 @@ export const MapContainer = styled.div`
     display: flex;
     justify-content: center;
     align-content: center;
+    padding:  10px;
 `
 
 export const LogoMarker = styled.img`
