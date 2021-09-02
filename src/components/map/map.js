@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'
-import { MapContainer } from './MapElements'
+import { MapContainer, LogoMarker } from './MapElements'
 import ReactMapGL, { Marker, FlyToInterpolator } from "react-map-gl";
+import Logo from '../../images/Logo_OC_Cuca.png'
 
 const REACT_APP_MAPBOX_TOKEN = 'pk.eyJ1IjoiZW5yaXF1ZW9wY2wiLCJhIjoiY2t0MnBtMzJjMG1wbzJ6czJ1ZTVrdm00YSJ9.Z7iBF0UFAyh3c-UTwbKhnw';
 
@@ -26,7 +27,7 @@ const MapApp = () => {
                     latitude={41.392100}
                     longitude={2.033520}
                  >
-                    <h1>OPCL</h1>
+                    <LogoMarker src={Logo} alt="OPCL" />
 
                 </Marker>
             </ReactMapGL>

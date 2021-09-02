@@ -7,3 +7,8 @@ export const MapContainer = styled.div`
     justify-content: center;
     align-content: center;
 `
+
+export const LogoMarker = styled.img`
+    height: 30px;
+    width: 30px;
+`
