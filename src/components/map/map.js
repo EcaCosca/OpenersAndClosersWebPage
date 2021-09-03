@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import { MapContainer, LogoMarker, TextContainer, ConctactH2, ConctactP } from './MapElements'
 import ReactMapGL, { Marker, FlyToInterpolator } from "react-map-gl";
 import Logo from '../../images/Logo_OC_Cuca.png'
-import { AiOutlineClockCircle } from 'react-icons/ai'
+import { AiOutlineClockCircle, AiOutlineHome } from 'react-icons/ai'
 
 const REACT_APP_MAPBOX_TOKEN = 'pk.eyJ1IjoiZW5yaXF1ZW9wY2wiLCJhIjoiY2t0MnBtMzJjMG1wbzJ6czJ1ZTVrdm00YSJ9.Z7iBF0UFAyh3c-UTwbKhnw';
 
@@ -21,7 +21,7 @@ const MapApp = () => {
         <MapContainer>
             <TextContainer>
                 <ConctactH2>
-                    Openers & Closers
+                    <AiOutlineHome /> Openers & Closers
                 </ConctactH2>
                 <ConctactP>
                     Calle Agricultura 17, (Nave 12) <br />
@@ -31,7 +31,7 @@ const MapApp = () => {
                     <b>Fax.</b> +34 93 408 40 38<br />
                 </ConctactP>
                 <ConctactH2>
-                    <AiOutlineClockCircle />Horario oficina
+                    <AiOutlineClockCircle /> Horario oficina
                 </ConctactH2>
                 <ConctactP>
                     <b>Lunes a Jueves</b><br />
