@@ -16,17 +16,20 @@ export const LogoMarker = styled.img`
 `
 
 export const TextContainer = styled.div`
-    height: 800px;
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
     padding:  10px;
+    flex-direction: column;
 
 `
 
 export const ConctactH2 = styled.h2`
+    margin: 10px;
+`
 
+export const ConctactP = styled.p`
+    margin: 10px;
 `
 
 export const FormContainer = styled.div`

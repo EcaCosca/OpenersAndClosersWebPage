@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { MapContainer, LogoMarker, TextContainer, ConctactH2 } from './MapElements'
+import { MapContainer, LogoMarker, TextContainer, ConctactH2, ConctactP } from './MapElements'
 import ReactMapGL, { Marker, FlyToInterpolator } from "react-map-gl";
 import Logo from '../../images/Logo_OC_Cuca.png'
 
@@ -22,9 +22,23 @@ const MapApp = () => {
                 <ConctactH2>
                     Openers & Closers
                 </ConctactH2>
+                <ConctactP>
+                    Calle Agricultura 17, (Nave 12) <br />
+                    08980 Sant Feliu de Llobregat, Barcelona<br />
+                    <br />
+                    <b>Tel.</b> +34 93 408 05 15<br />
+                    <b>Fax.</b> +34 93 408 40 38<br />
+                </ConctactP>
                 <ConctactH2>
                     Horario oficina
                 </ConctactH2>
+                <ConctactP>
+                    <b>Lunes a Jueves</b><br />
+                    8:00h a 17:30h<br />
+                    <br />
+                    <b>Viernes</b><br />
+                    8:00h a 14:20h<br />
+                </ConctactP>
             </TextContainer>
             <ReactMapGL 
                 {...viewport}
