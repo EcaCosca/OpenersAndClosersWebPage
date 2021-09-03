@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { MapContainer, LogoMarker } from './MapElements'
+import { MapContainer, LogoMarker, TextContainer, ConctactH2 } from './MapElements'
 import ReactMapGL, { Marker, FlyToInterpolator } from "react-map-gl";
 import Logo from '../../images/Logo_OC_Cuca.png'
 
@@ -18,7 +18,14 @@ const MapApp = () => {
 
     return (
         <MapContainer>
-            
+            <TextContainer>
+                <ConctactH2>
+                    Openers & Closers
+                </ConctactH2>
+                <ConctactH2>
+                    Horario oficina
+                </ConctactH2>
+            </TextContainer>
             <ReactMapGL 
                 {...viewport}
                 maxZomm={20}
