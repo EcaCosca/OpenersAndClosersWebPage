@@ -9,8 +9,6 @@ import {
     HeroH1,
     HeroP,
     HeroBtnWrapper,
-    // ArrowForward,
-    // ArrowRight 
 } from './HeroElements'
 import Fade from 'react-reveal/Fade';
 
