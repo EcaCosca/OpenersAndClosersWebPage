@@ -12,6 +12,8 @@ import electromagneticos from './pages/electromagneticos';
 import seguridad from './pages/seguridad';
 import CreateUser from './components/Createuser/CreateUser'
 import contacto from './pages/contacto';
+import privacidad from './pages/privacidad';
+import cookies from './pages/cookies';
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
         <Route path="/seguridad" component={seguridad} />
         <Route path="/create" component={CreateUser} />
         <Route path="/contacto" component={contacto} />
+        <Route path="/privacidad" component={privacidad} />
+        <Route path="/cookies" component={cookies} />
       </Switch>
 
     </Router>

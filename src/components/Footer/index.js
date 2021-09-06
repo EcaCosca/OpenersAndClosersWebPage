@@ -64,7 +64,7 @@ function Footer() {
             </FooterLinkItems>
           </FooterLinkWrapper>
         </FooterLinksContainer>
-              <WebsiteRights>© 2001-{new Date().getFullYear()} Openers & Closers - Todos los derechos reservados  |  <FooterLink to="/">Política de Privacidad</FooterLink>  |  <FooterLink to="/">Política de Cookies</FooterLink></WebsiteRights>
+              <WebsiteRights>© 2001-{new Date().getFullYear()} Openers & Closers - Todos los derechos reservados  |  <FooterLink to="/privacidad">Política de Privacidad</FooterLink>  |  <FooterLink to="/cookies">Política de Cookies</FooterLink></WebsiteRights>
       </FooterWrap>
     </FooterContainer>
   );
