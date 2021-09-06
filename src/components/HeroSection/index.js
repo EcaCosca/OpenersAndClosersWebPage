@@ -7,8 +7,7 @@ import {
     VideoBg,
     HeroContent,
     HeroH1,
-    HeroP,
-    HeroBtnWrapper,
+    HeroP
 } from './HeroElements'
 import Fade from 'react-reveal/Fade';
 
@@ -35,11 +34,6 @@ const HeroSection = () => {
                     Openers & Closers es una empresa familiar que se fundó con el objetivo de producir cerraderos eléctricos de alta calidad para un mercado internacional.
                     </Fade>
                 </HeroP>
-                    {/* <HeroBtnWrapper>
-                        <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
-                            Get started {hover ? <ArrowForward /> : <ArrowRight />}
-                        </Button>
-                    </HeroBtnWrapper> */}
             </HeroContent>
         </HeroContainer>
     )
