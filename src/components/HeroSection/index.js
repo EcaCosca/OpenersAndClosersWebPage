@@ -7,17 +7,12 @@ import {
     VideoBg,
     HeroContent,
     HeroH1,
-    HeroP
+    HeroP,
 } from './HeroElements'
 import Fade from 'react-reveal/Fade';
 
 
 const HeroSection = () => {
-    const [hover, setHover] = useState(false)
-
-    const onHover = () => {
-        setHover(!hover)
-    }
     return (
         <HeroContainer>
             <HeroBg>
