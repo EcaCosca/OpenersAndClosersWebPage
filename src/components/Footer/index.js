@@ -57,28 +57,14 @@ function Footer() {
             </FooterLinkItems>
           {/* Column 4 */}
             <FooterLinkItems>
-              {/* <FooterLinkTitle>This is the title</FooterLinkTitle> */}
                 <FooterLink to="/">Soluciones</FooterLink>
                 <FooterLink to="/">Configurador</FooterLink>
                 <FooterLink to="/">Tienda</FooterLink>
                 <FooterLink to="/contacto">Contacto</FooterLink>
             </FooterLinkItems>
           </FooterLinkWrapper>
-          <FooterLinkWrapper>
-          {/* Column 5 */}
-            {/* <FooterLinkItems>
-              <FooterLinkTitle>This is the title</FooterLinkTitle>
-                <FooterLink to="/">Yeah!</FooterLink>
-                <FooterLink to="/">Yeah!</FooterLink>
-                <FooterLink to="/">Yeah!</FooterLink>
-                <FooterLink to="/">Yeah!</FooterLink>
-                <FooterLink to="/">Yeah!</FooterLink>
-                <FooterLink to="/">Yeah!</FooterLink>
-                <FooterLink to="/">Yeah!</FooterLink>
-            </FooterLinkItems> */}
-          </FooterLinkWrapper>
         </FooterLinksContainer>
-              <WebsiteRights>© 2001-{new Date().getFullYear()} Openers & Closers - Todos los derechos reservados  |  Política de Privacidad  |  Política de Cookies</WebsiteRights>
+              <WebsiteRights>© 2001-{new Date().getFullYear()} Openers & Closers - Todos los derechos reservados  |  <FooterLink to="/">Política de Privacidad</FooterLink>  |  <FooterLink to="/">Política de Cookies</FooterLink></WebsiteRights>
       </FooterWrap>
     </FooterContainer>
   );
