@@ -1,30 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Nav, NavLink } from './ProductNavBarElements';
-import { animateScroll as scroll } from 'react-scroll';
 
-
-const ProductNavbar = ({ toggle }) => {
-    const [scrollNav, setScrollNav] = useState(false)
-
-    const changeNav = ()=> {
-        if(window.scrollY >= 80) {
-            setScrollNav(true)
-        } else {
-            setScrollNav(false)
-        }
-    }
-
-    useEffect(() => {
-        window.addEventListener('scroll', changeNav)
-    }, [])
-
-    const toggleHome = () => {
-        scroll.scrollToTop();
-    }
-   
+const ProductNavbar = () => {
     return (
         <>
-            <Nav scrollNav={scrollNav}>
+            <Nav>
                 <NavLink to="/electronicos" activeStyle>
                     Opcion
                 </NavLink>
@@ -40,7 +20,6 @@ const ProductNavbar = ({ toggle }) => {
                 <NavLink to="/electronicos" activeStyle>
                     Opcion
                 </NavLink>
-
             </Nav>    
         </>
     )
