@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import { MapContainer, LogoMarker, TextContainer, ConctactH2, ConctactP } from './MapElements'
-import ReactMapGL, { Marker, FlyToInterpolator } from "react-map-gl";
+import ReactMapGL, { Marker } from "react-map-gl";
 import Logo from '../../images/Logo_OC_Cuca.png'
 import { AiOutlineClockCircle, AiOutlineHome } from 'react-icons/ai'
 
@@ -14,8 +14,6 @@ const MapApp = () => {
         height: 600,
         zoom: 14,
     });
-
-    const mapRed = useRef();
 
     return (
         <MapContainer>
