@@ -6,7 +6,6 @@ import Navbar from '../components/Navbar/Navbar'
 import Services from '../components/Services/Services'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
-import Instafeed from '../components/Instafeed/Instafeed'
 import PDF from '../components/PDF'
 
 const Home = () => {
@@ -21,7 +20,6 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <HeroSection />
-            <Instafeed />
             <PDF />
             <InfoSection {...homeObjOne}/>
             <InfoSection {...homeObjTwo}/>
