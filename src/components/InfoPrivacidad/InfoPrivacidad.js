@@ -2,23 +2,27 @@ import React, {useState} from 'react'
 import { PrivContainer, PrivWrapper } from './InfoPrivacidadElements'
 
 const InfoPrivacidad = () => {
-    const [show,setShow] = useState({
+    const [appState, changeState] = useState({
         show: true,
     })
+
+    function toggleActive(index) {
+        changeState({ })
+    }
     return (
         <PrivContainer>
             <PrivWrapper>
-                <div onClick={()=>setShow(show)} id="1">
+                <div key="1" onClick={()=>changeState(appState)} id="1">
                 {
-                    show?
+                    appState?
                         null
                         :
                         null
                 }
                 </div>
-                <div onClick={()=>setShow(!show)} id="2">
+                <div key="2" onClick={()=>changeState(!appState)} id="2">
                 {
-                    show?
+                    appState?
                         <>
                             <h2>COOKIES QUE USA ESTE SITIO</h2>
                             <ul>
@@ -33,9 +37,9 @@ const InfoPrivacidad = () => {
                         <h2>COOKIES QUE USA ESTE SITIO</h2>
                 }
                 </div>
-                <div onClick={()=>setShow(!show)} id="3">
+                <div key="3" onClick={()=>changeState(!appState)} id="3">
                 {
-                    show?
+                    appState?
                         <>
                             <h2>COOKIES QUE USA ESTE SITIO</h2>
                             <ul>
@@ -50,9 +54,9 @@ const InfoPrivacidad = () => {
                         <h2>COOKIES QUE USA ESTE SITIO</h2>
                 }
                 </div>
-                <div onClick={()=>setShow(!show)} id="4">
+                <div key="4" onClick={()=>changeState(!appState)} id="4">
                 {
-                    show?
+                    appState?
                         <>
                             <h2>COOKIES QUE USA ESTE SITIO</h2>
                             <ul>
