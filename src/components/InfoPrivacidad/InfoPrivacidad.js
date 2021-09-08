@@ -1,7 +1,7 @@
 import React from 'react'
-import { PrivContainer, PrivWrapper } from './InforPrivacidadElements'
+import { PrivContainer, PrivWrapper } from './InfoPrivacidadElements'
 
-const InforPrivacidad = () => {
+const InfoPrivacidad = () => {
     return (
         <PrivContainer>
             <PrivWrapper>
@@ -11,4 +11,4 @@ const InforPrivacidad = () => {
     )
 }
 
-export default InforPrivacidad
+export default InfoPrivacidad
