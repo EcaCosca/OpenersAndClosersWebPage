@@ -8,7 +8,7 @@ const InfoPrivacidad = () => {
     return (
         <PrivContainer>
             <PrivWrapper>
-                <div onClick={()=>setShow(show)}>
+                <div onClick={()=>setShow(show)} id="1">
                 {
                     show?
                         null
@@ -16,7 +16,7 @@ const InfoPrivacidad = () => {
                         null
                 }
                 </div>
-                <div onClick={()=>setShow(!show)}>
+                <div onClick={()=>setShow(!show)} id="2">
                 {
                     show?
                         <>
@@ -33,7 +33,7 @@ const InfoPrivacidad = () => {
                         <h2>COOKIES QUE USA ESTE SITIO</h2>
                 }
                 </div>
-                <div onClick={()=>setShow(!show)}>
+                <div onClick={()=>setShow(!show)} id="3">
                 {
                     show?
                         <>
@@ -50,7 +50,7 @@ const InfoPrivacidad = () => {
                         <h2>COOKIES QUE USA ESTE SITIO</h2>
                 }
                 </div>
-                <div onClick={()=>setShow(!show)}>
+                <div onClick={()=>setShow(!show)} id="4">
                 {
                     show?
                         <>
