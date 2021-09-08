@@ -1,10 +1,13 @@
 import React from 'react'
+import { PrivContainer, PrivWrapper } from './InforPrivacidadElements'
 
 const InforPrivacidad = () => {
     return (
-        <div>
-            
-        </div>
+        <PrivContainer>
+            <PrivWrapper>
+
+            </PrivWrapper>
+        </PrivContainer>
     )
 }
 
