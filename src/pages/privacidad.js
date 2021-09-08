@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer'
 import { Phrase, Char } from "animatedtxt";
 import { ProductHeaderContainer, ProductH1 } from '../components/Product/Header/ProductHeaderElements';
+import InfoPrivacidad from '../components/InfoPrivacidad/InfoPrivacidad';
 
 const privacidad = () => {
     return (
@@ -38,6 +39,7 @@ const privacidad = () => {
                 </Phrase>
             </ProductH1>
             </ProductHeaderContainer>
+            <InfoPrivacidad />
             <Footer />
         </div>
     )
