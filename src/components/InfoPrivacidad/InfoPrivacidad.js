@@ -67,33 +67,49 @@ const InfoPrivacidad = () => {
                 {
                     toggle?
                         <>
-                            <h2></h2>
-                            
+                            <h2>COOKIES PROPIAS</h2>
+                            <p><b>El usuario acepta expresamente, por la utilización de este Site, el tratamiento de la información recabada en la forma y con los fines anteriormente mencionados.</b> Y asimismo reconoce conocer la posibilidad de rechazar el tratamiento de tales datos o información rechazando el uso de Cookies mediante la selección de la configuración apropiada a tal fin en su navegador. Si bien esta opción de bloqueo de Cookies en su navegador puede no permitirle el uso pleno de todas las funcionalidades del Website.</p>
                         </>
                         :
-                        <h2></h2>
+                        <h2>COOKIES PROPIAS</h2>
                 }
                 </div>
                 <div onClick={toggler} >
                 {
                     toggle?
                         <>
-                            <h2></h2>
-                            
+                            <h2>INFORMACIÓN ADICIONAL</h2>
+                            <p><b>En cualquier momento podrá ejercer su derecho de desactivación o eliminación de cookies de este sitio web.</b> Puede usted permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones del navegador instalado en su ordenador:</p>
+                            <ul>
+                                <li>Chrome</li>
+                                <li>Explorer</li>
+                                <li>Firefox</li>
+                                <li>Ssafari</li>
+                            </ul>
+                            <p>Ni esta web ni sus representantes legales se hacen responsables ni del contenido ni de la veracidad de las políticas de privacidad que puedan tener los terceros mencionados en esta política de cookies.</p>
+                            <p>Los navegadores web son las herramientas encargadas de almacenar las cookies y desde este lugar debe efectuar su derecho a eliminación o desactivación de las mismas. Ni esta web ni sus representantes legales pueden garantizar la correcta o incorrecta manipulación de las cookies por parte de los mencionados navegadores.</p>
+                            <p>En algunos casos es necesario instalar cookies para que el navegador no olvide su decisión de no aceptación de las mismas.</p>
                         </>
                         :
-                        <h2></h2>
+                        <h2>INFORMACIÓN ADICIONAL</h2>
                 }
                 </div>
                 <div onClick={toggler} >
                 {
                     toggle?
                         <>
-                            <h2></h2>
-                            
+                            <h2>CONTACTO</h2>
+                            <p>Si tiene dudas sobre la política de cookies, puede contactar con Webmaster en info@openers-closers.com, también mediante teléfono +34 93 408 05 15 y fax +34 93 408 40 38</p>
+                            <p>OPENERS & CLOSERS S.L
+
+                            Calle Agricultura 17, (nave 12)
+
+                            08980 Sant Feliu de Llobregat
+
+                            Barcelona – España</p>
                         </>
                         :
-                        <h2></h2>
+                        <h2>CONTACTO</h2>
                 }
                 </div>
             </PrivWrapper>
