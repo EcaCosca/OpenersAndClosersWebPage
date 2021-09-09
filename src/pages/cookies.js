@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer'
 import { Phrase, Char } from "animatedtxt";
 import { ProductHeaderContainer, ProductH1 } from '../components/Product/Header/ProductHeaderElements';
+import InfoCookies from '../components/InfoCookies/InfoCookies';
 
 const cookies = () => {
     return (
@@ -35,6 +36,7 @@ const cookies = () => {
                 </Phrase>
             </ProductH1>
             </ProductHeaderContainer>
+            <InfoCookies />
             <Footer />
         </div>
     )
