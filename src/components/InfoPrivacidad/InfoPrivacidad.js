@@ -134,7 +134,22 @@ const InfoPrivacidad = () => {
                             <p>Los datos personales serán almacenados por OPENERS & CLOSERS u otros terceros que actúen en nuestro nombre, si bien solo en la medida en que sea necesario para que cumplamos nuestras obligaciones y estrictamente durante el periodo de tiempo preciso para conseguir los objetivos para los cuales se hayan obtenidos los datos. Los datos personales serán eliminados de nuestros registros o convenientemente disociados cuando dejen de ser necesarios.  Los datos personales contenidos en contactos, comunicaciones y correspondencia empresarial podrán estar sujetos a registros legales en materia de conservación.</p>
                             <p><b>¿Qué derechos pueden ejercer los interesados en relación al tratamiento de sus datos?</b></p>
                             <p>Todo consentimiento prestado por un interesado para que conservemos o usemos sus datos personales podrá ser revocado. Asimismo, los interesados podrán ejercitar los derechos siguientes:</p>
-                            
+                            <ul>
+                                <li>Derechos de acceso: Los interesados tendrán derecho a consultar si poseemos datos personales acerca de ellos y, en caso afirmativo, a solicitar información sobre los datos personales en nuestro poder. Asimismo, estaremos obligados a responder, entre otras preguntas, por qué usamos los datos personales, y a proporcionar detalles sobre qué datos tenemos y a quiénes hemos permitido acceder a dichos datos. No obstante, este derecho no es absoluto y los derechos de acceso podrán verse restringidos por los intereses de otras personas.</li>
+                                <li>Derecho de rectificación: Estaremos obligados a rectificar aquellos datos personales que sean inexactos y a completar aquellos datos personales que estén incompletos, cuando así se nos solicite.</li>
+                                <li>Derecho de supresión (derecho de olvido): En algunas circunstancias, estaremos obligados a suprimir los datos personales cuando así nos lo solicite el interesado.</li>
+                                <li>Derecho a la limitación del tratamiento: En algunas circunstancias, estaremos obligados a limitar el uso que hagamos de los datos personales cuando así no lo solicite el interesado. En tales casos, solo podremos usar los datos para los fines limitados que establezca específicamente la legislación aplicable.</li>
+                                <li>Derecho a solicitar la portabilidad de los datos: En determinadas circunstancias, los interesados podrán tener derecho a recibir los datos personales a los que tengamos acceso, en un formato estructurado, de uso común y de lectura mecánica y a transmitir posteriormente dichos datos a otra entidad sin ningún impedimento por nuestra parte.</li>
+                                <li>Derecho de oposición: En algunos casos, los interesados tendrán derecho a oponerse a que usemos sus datos personales. En tales casos, estaremos obligados a dejar de usar los datos personales. Esto podrá aplicarse, por ejemplo, cuando se usen datos personales con fines de marketing y de elaboración de perfiles.</li>
+                            </ul>
+                            <p><b>Contacto con OPENERS & CLOSERS</b></p>
+                            <p>No tendremos inconveniente en proporcionar cualquier información adicional o atender cualquier solicitud relativa al ejercicio de los derecho descritos anteriormente. Dichas solicitudes podrán ser enviadas a OPENERS & CLOSERS dirigiéndose por escrito a la sede del centro, ubicada en:</p>
+                            <p>OPENERS AND CLOSERS S.L.
+                            Calle Agricultura 17 (nave 12) Polígono Industrial El Pla
+                            08980 Sant Feliu de Llobregat, Barcelona
+                            Teléfono 93 408 05 15
+                            Email: info@openers-closers.com</p>
+                            <p>Las personas físicas también tendrán derecho a presentar una reclamación ante las autoridades de protección de datos competentes.</p>
                         </>
                         :
                         <h2>POLÍTICA DE PRIVACIDAD - RGPD</h2>
