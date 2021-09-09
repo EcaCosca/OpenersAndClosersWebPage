@@ -4,12 +4,8 @@ import { PrivContainer, PrivWrapper } from './InfoPrivacidadElements'
 const InfoPrivacidad = () => {
     const [toggle, setToggle] = useState(false);
 
-    const toggler = (dif) => {
-        if (toggle.id === dif) {
+    const toggler = () => {
         toggle ? setToggle(false) : setToggle(true);
-    } else {
-        console.log("dammit")
-    }
     }
     return (
         <PrivContainer>
