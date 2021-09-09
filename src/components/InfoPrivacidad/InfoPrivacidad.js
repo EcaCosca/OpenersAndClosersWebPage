@@ -31,11 +31,63 @@ const InfoPrivacidad = () => {
                 {
                     toggle?
                         <>
-                            <h2>GARANTÍAS Y RESPONSABILIDADES</h2>
+                            <h2>IDEAS EQUIVOCADAS SOBRE LAS COOKIES</h2>
+                            <p>Desde su introducción en Internet han circulado <b>ideas equivocadas</b> acerca de las cookies. En 2005 Jupiter Research publicó los resultados de un estudio, según el cual un importante porcentaje de entrevistados creían cierta alguna de las siguientes afirmaciones:</p>
+                            <ul>
+                                <li>Las cookies son similares a gusanos y virus en que pueden borrar datos de los discos duros de los usuarios.</li>
+                                <li>Las cookies son un tipo de spyware porque pueden leer información personal almacenada en el ordenador de los usuarios.</li>
+                                <li>Las cookies generan popups.</li>
+                                <li>Las cookies se utilizan para generar spam.</li>
+                                <li>Las cookies solo se utilizan con fines publicitarios.</li>
+                            </ul>
+                            <p>En realidad, <b>las cookies son solo datos</b>, no código, luego no pueden borrar ni leer información del ordenador de los usuarios. Sin embargo, las cookies permiten detectar las páginas visitadas por un usuario en un sitio determinado o conjunto de sitios. Esta información puede ser recopilada en un perfil de usuario. Estos perfiles son habitualmente anónimos, es decir, no contienen información personal del usuario (nombre, dirección, etc). De hecho, no pueden contenerla a menos que el propio usuario la haya comunicado a alguno de los sitios visitados. Pero aunque anónimos, estos perfiles han sido objeto de algunas preocupaciones relativas a la privacidad.</p>
+                        </>
+                        :
+                        <h2>IDEAS EQUIVOCADAS SOBRE LAS COOKIES</h2>
+                }
+                </div>
+                <div onClick={toggler} >
+                {
+                    toggle?
+                        <>
+                            <h2></h2>
                             
                         </>
                         :
-                        <h2>GARANTÍAS Y RESPONSABILIDADES</h2>
+                        <h2></h2>
+                }
+                </div>
+                <div onClick={toggler} >
+                {
+                    toggle?
+                        <>
+                            <h2></h2>
+                            
+                        </>
+                        :
+                        <h2></h2>
+                }
+                </div>
+                <div onClick={toggler} >
+                {
+                    toggle?
+                        <>
+                            <h2></h2>
+                            
+                        </>
+                        :
+                        <h2></h2>
+                }
+                </div>
+                <div onClick={toggler} >
+                {
+                    toggle?
+                        <>
+                            <h2></h2>
+                            
+                        </>
+                        :
+                        <h2></h2>
                 }
                 </div>
             </PrivWrapper>
