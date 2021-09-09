@@ -14,7 +14,7 @@ const InfoPrivacidad = () => {
     return (
         <PrivContainer>
             <PrivWrapper>
-                <div key="2" onClick={toggler(2)} id="2">
+                <div onClick={toggler} >
                 {
                     toggle?
                         <>
@@ -23,6 +23,63 @@ const InfoPrivacidad = () => {
                         </>
                         :
                         <h2>DERECHOS DE PROPIEDAD INTELECTUAL</h2>
+                }
+                </div>
+                <div onClick={toggler} >
+                {
+                    toggle?
+                        <>
+                            <h2>GARANTÍAS Y RESPONSABILIDADES</h2>
+                            <p><b>Openers&Closers S.L</b> no garantiza el acceso continuo a los contenidos de su página Web, ni la ausencia de virus y/o demás componentes dañinos en el website o en sus servidores, ni tampoco su correcta visualización o descarga que puede verse impedida, dificultada o interrumpida por factores o circunstancias ajenas a la empresa.
+                            El site ni <b>Openers&Closers S.L</b> no se responsabiliza de posibles daños o perjuicios producidos por interferencias, interrupciones o desconexiones en el sistema que sean ajenos a su control ni tampoco de posibles daños causados en el sistema informático del usuario (hardware y software) como consecuencia del acceso a la website. Por tanto, el acceso a nuestra página Web y la navegación por la misma se hace bajo la responsabilidad del usuario.
+                            <b>Openers&Closers S.L</b> no asume ningún tipo de responsabilidad por los contenidos de los enlaces de terceros a los que se haga referencia en la Web</p>
+                        </>
+                        :
+                        <h2>GARANTÍAS Y RESPONSABILIDADES</h2>
+                }
+                </div>
+                <div onClick={toggler} >
+                {
+                    toggle?
+                        <>
+                            <h2>DURACIÓN Y MODIFICACIÓN</h2>
+                            <p><b>Openers&Closers S.L</b>  se reserva el derecho a modificar y/o actualizar los términos y condiciones establecidos en esta Web así como sus contenidos. De manera que la vigencia temporal de estas condiciones quedará limitada al tiempo de su exposición.</p>
+                        </>
+                        :
+                        <h2>DURACIÓN Y MODIFICACIÓN</h2>
+                }
+                </div>
+                <div onClick={toggler} >
+                {
+                    toggle?
+                        <>
+                            <h2>JURISDICCIÓN APLICABLE</h2>
+                            <p>Cualquier controversia o reclamo que surja que esté relacionada con las condiciones de uso, <b>Openers&Closers S.L</b> y el usuario, con renuncia expresa a cualquier otro fuero, se someten al de los juzgados y tribunales del domicilio del usuario. En el caso de que el usuario tenga su domicilio fuera de España, <b>Openers&Closers S.L</b> y el usuario se someten, con renuncia expresa a cualquier otro fuero, a los juzgados de la ciudad de Barcelona (España). Si alguna disposición de estas condiciones de uso es declarada ilegal, nula o inaplicable por un tribunal, las disposiciones restantes permanecerán en pleno vigor y efecto.</p>
+                        </>
+                        :
+                        <h2>JURISDICCIÓN APLICABLE</h2>
+                }
+                </div>
+                <div onClick={toggler} >
+                {
+                    toggle?
+                        <>
+                            <h2>COOKIES</h2>
+                            <p>El acceso a este sitio puede implicar la utilización de cookies. Las cookies son pequeñas cantidades de información que se almacenan en el navegador utilizado por cada usuario para que el servidor recuerde cierta información que posteriormente pueda utilizar. Esta información permite identificarle a usted como un usuario concreto y permite guardar sus preferencias personales, así como información técnica como puedan ser visitas o páginas concretas que visite. Aquellos usuarios que no deseen recibir cookies o quieran ser informados antes de que se almacenen en su ordenador, pueden configurar su navegador a tal efecto.</p>
+                        </>
+                        :
+                        <h2>COOKIES</h2>
+                }
+                </div>
+                <div onClick={toggler} >
+                {
+                    toggle?
+                        <>
+                            <h2>POLÍTICA DE PRIVACIDAD - RGPD</h2>
+                            <p>Cualquier controversia o reclamo que surja que esté relacionada con las condiciones de uso, <b>Openers&Closers S.L</b> y el usuario, con renuncia expresa a cualquier otro fuero, se someten al de los juzgados y tribunales del domicilio del usuario. En el caso de que el usuario tenga su domicilio fuera de España, <b>Openers&Closers S.L</b> y el usuario se someten, con renuncia expresa a cualquier otro fuero, a los juzgados de la ciudad de Barcelona (España). Si alguna disposición de estas condiciones de uso es declarada ilegal, nula o inaplicable por un tribunal, las disposiciones restantes permanecerán en pleno vigor y efecto.</p>
+                        </>
+                        :
+                        <h2>POLÍTICA DE PRIVACIDAD - RGPD</h2>
                 }
                 </div>
                 <div key="3" onClick={()=>setToggle(!toggle)} id="3">
