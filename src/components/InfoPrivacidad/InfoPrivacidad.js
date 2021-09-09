@@ -50,11 +50,17 @@ const InfoPrivacidad = () => {
                 {
                     toggle?
                         <>
-                            <h2></h2>
-                            
+                            <h2>COOKIES DE TERCEROS</h2>
+                            <p>La Web de <b>Openers&Closers</b> puede utilizar servicios de terceros que, por cuenta de <b>Openers&Closers</b>, recopilaran información con fines estadísticos, de uso del Site por parte del usuario y para la prestación de otros servicios relacionados con la actividad del Website y otros servicios de Internet.</p>
+                            <ul>
+                                <li><b>Google Analytics:</b>En particular, este sitio Web utiliza Google Analytics, un servicio analítico de web prestado por Google, Inc. con domicilio en los Estados Unidos con sede central en 1600 Amphitheatre Parkway, Mountain View, California 94043.  Para la prestación de estos servicios, estos utilizan cookies que recopilan la información, incluida la dirección IP del usuario, que será transmitida, tratada y almacenada por Google en los términos fijados en la Web de Google. Incluyendo la posible transmisión de dicha información a terceros por razones de exigencia legal o cuando dichos terceros procesen la información por cuenta de Google.</li>
+                                <li><b>Youtube:</b> Un servicio prestado por Google utiliza cookies que recopilan la información, incluida la dirección IP del usuario, que será transmitida, tratada y almacenada por Googleen los términos fijados en la Web de Google. Incluyendo la posible transmisión de dicha información a terceros por razones de exigencia legal o cuando dichos terceros procesen la información por cuenta de Google.</li>
+                                <li><b>WordPres:</b> Cada plugin del CMS WordPress utiliza sus propias cookies, sin estos plugins el site no funcionaría en toda su plenitud.</li>
+                                <li><b>Redes sociales:</b> Cada red social utiliza sus propias cookies para que usted pueda pinchar en botones del tipo Me gusta o Compartir.</li>
+                            </ul>
                         </>
                         :
-                        <h2></h2>
+                        <h2>COOKIES DE TERCEROS</h2>
                 }
                 </div>
                 <div onClick={toggler} >
