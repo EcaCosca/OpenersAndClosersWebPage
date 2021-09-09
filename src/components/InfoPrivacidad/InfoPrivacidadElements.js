@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const PrivContainer = styled.div`
-    color: #fff;
+    color: #111111;
     background: #f9f9f9;
 
     @media screen and (max-width: 768px) {
