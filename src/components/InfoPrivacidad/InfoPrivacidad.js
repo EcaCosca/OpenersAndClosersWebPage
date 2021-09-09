@@ -127,29 +127,20 @@ const InfoPrivacidad = () => {
                             <p><b>¿Qué base jurídica tenemos para conservar y usar los datos personales?</b></p>
                             <p>La base jurídica para usar los datos personales será la del desarrollo o ejecución del contrato de OPENERS & CLOSERS y el cliente. Respecto el envío de comunicaciones comerciales, la base jurídica en su caso es el interés legítimo de OPENERS & CLOSERS de acuerdo con el artículo 21.2 de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico, al existir una relación contractual previa, a través de la cual OPENERS & CLOSERS obtuvo de forma lícita los datos de contacto de sus clientes para emplearlos para el envío de comunicaciones comerciales referentes a productos o servicios similares a los que inicialmente fueron objeto de contratación por parte de éste.</p>
                             <p>En determinados casos futuros podremos solicitar el consentimiento previo del cliente para usar sus datos personales. En ocasiones, podremos usar datos personales para cumplir una obligación legal impuesta a OPENERS & CLOSERS o cuando exista un interés legítimo de OPENERS & CLOSERS que justifique debidamente el uso de los datos personales para una finalidad específica, en cuyo caso le informaremos al respecto.</p>
+                            <p><b>Acceso a los datos personales por terceros distintos de OPENERS & CLOSERS</b></p>
+                            <p>Como criterio general no se ceden datos personales a terceros, salvo obligación legal o que la persona interesada lo haya autorizado de forma explícita. No obstante, para llevar a cabo determinados procedimientos y poder prestar un servicio adecuado, es imprescindible efectuar determinadas cesiones o comunicaciones a terceros. Recurrimos a empresas especializadas que pueden acceder a datos en calidad de encargados de tratamiento para prestar servicios informáticos, logísticos, administrativos… (por ejemplo, podemos proporcionar determinados datos personales a una empresa de transportes/logística para fines relacionados con la entrega.) Dichos terceros, podrán tener acceso a los datos personales en la medida necesaria para prestar tales servicios.</p>
+                            <p>Por lo demás, sus datos personales no serán cedidos a terceras empresas. En cuyo caso le informaremos al respecto.</p>
+                            <p><b>¿Durante cuánto tiempo conservaremos los datos personales?</b></p>
+                            <p>Los datos personales serán almacenados por OPENERS & CLOSERS u otros terceros que actúen en nuestro nombre, si bien solo en la medida en que sea necesario para que cumplamos nuestras obligaciones y estrictamente durante el periodo de tiempo preciso para conseguir los objetivos para los cuales se hayan obtenidos los datos. Los datos personales serán eliminados de nuestros registros o convenientemente disociados cuando dejen de ser necesarios.  Los datos personales contenidos en contactos, comunicaciones y correspondencia empresarial podrán estar sujetos a registros legales en materia de conservación.</p>
+                            <p><b>¿Qué derechos pueden ejercer los interesados en relación al tratamiento de sus datos?</b></p>
+                            <p>Todo consentimiento prestado por un interesado para que conservemos o usemos sus datos personales podrá ser revocado. Asimismo, los interesados podrán ejercitar los derechos siguientes:</p>
+                            
                         </>
                         :
                         <h2>POLÍTICA DE PRIVACIDAD - RGPD</h2>
                 }
                 </div>
                 <div key="3" onClick={()=>setToggle(!toggle)} id="3">
-                {
-                    toggle?
-                        <>
-                            <h2>COOKIES QUE USA ESTE SITIO</h2>
-                            <ul>
-                                <li><b>Cookies técnicas: </b>Son aquéllas que permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en ella existan como, por ejemplo, controlar el tráfico y la comunicación de datos, identificar la sesión, acceder a partes de acceso restringido, recordar los elementos que integran un pedido, realizar el proceso de compra de un pedido, realizar la solicitud de inscripción o participación en un evento, utilizar elementos de seguridad durante la navegación, almacenar contenidos para la difusión de videos o sonido o compartir contenidos a través de redes sociales.</li>
-                                <li><b>Cookies de personalización: </b>Son aquéllas que permiten al usuario acceder al servicio con algunas características de carácter general predefinidas en función de una serie de criterios en el terminal del usuario como por ejemplo serian el idioma, el tipo de navegador a través del cual accede al servicio, la configuración regional desde donde accede al servicio, etc.</li>
-                                <li><b>Cookies de análisis:</b>Son aquéllas que bien tratadas por nosotros o por terceros, nos permiten cuantificar el número de usuarios y así realizar la medición y análisis estadístico de la utilización que hacen los usuarios del servicio ofertado. Para ello se analiza su navegación en nuestra página web con el fin de mejorar la oferta de productos o servicios que le ofrecemos.</li>
-                                <li><b>Cookies publicitarias: </b> Son aquéllas que, bien tratadas por nosotros o por terceros, nos permiten gestionar de la forma más eficaz posible la oferta de los espacios publicitarios que hay en la página web, adecuando el contenido del anuncio al contenido del servicio solicitado o al uso que realice de nuestra página web. Para ello podemos analizar sus hábitos de navegación en Internet y podemos mostrarle publicidad relacionada con su perfil de navegación.</li>
-                                <li><b>Cookies de publicidad comportamental: </b>Son aquéllas que permiten la gestión, de la forma más eficaz posible, de los espacios publicitarios que, en su caso, el editor haya incluido en una página web, aplicación o plataforma desde la que presta el servicio solicitado. Estas cookies almacenan información del comportamiento de los usuarios obtenida a través de la observación continuada de sus hábitos de navegación, lo que permite desarrollar un perfil específico para mostrar publicidad en función del mismo.</li>
-                            </ul>
-                        </>
-                        :
-                        <h2>COOKIES QUE USA ESTE SITIO</h2>
-                }
-                </div>
-                <div key="4" onClick={()=>setToggle(!toggle)} id="4">
                 {
                     toggle?
                         <>
